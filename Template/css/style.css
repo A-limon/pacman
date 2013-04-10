@@ -7,7 +7,7 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-
+*{margin: 0;padding: 0;-webkit-margin-before:0;-webkit-margin-after:0;}
 article,
 aside,
 details,
@@ -18,9 +18,13 @@ header,
 hgroup,
 main,
 nav,
+ul，
 section,
 summary {
     display: block;
+}
+li{
+  list-style: none;
 }
 
 /**
@@ -62,7 +66,7 @@ audio:not([controls]) {
  */
 
 html {
-    font-family: sans-serif; /* 1 */
+    font-family: Microsoft YaHei,\5fae\8f6f\96c5\9ed1,STHeiti,Helvetica, Arial, sans-serif; /* 1 */
     -webkit-text-size-adjust: 100%; /* 2 */
     -ms-text-size-adjust: 100%; /* 2 */
 }
@@ -73,6 +77,10 @@ html {
 
 body {
     margin: 0;
+    padding: 0;
+    font-size: 100%;
+    line-height: 1.5;
+    background: #111111;
 }
 
 /* ==========================================================================
@@ -82,7 +90,9 @@ body {
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
-
+a{
+  text-decoration: none;
+}
 a:focus {
     outline: thin dotted;
 }
@@ -94,21 +104,11 @@ a:focus {
 a:active,
 a:hover {
     outline: 0;
-}
+  }
 
 /* ==========================================================================
    Typography
    ========================================================================== */
-
-/**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari 5, and Chrome.
- */
-
-h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
-}
 
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
@@ -208,6 +208,9 @@ sup {
 
 sub {
     bottom: -0.25em;
+}
+sup::before{
+  content: " ";
 }
 
 /* ==========================================================================
@@ -395,7 +398,202 @@ table {
     border-spacing: 0;
 }
 
-/* PACMAN THEME */
+/* 通用样式 */
+@font-face {
+    font-family: 'covered_by_your_graceregular';
+    src: url('coveredbyyourgrace-webfont.eot');
+    src: url('coveredbyyourgrace-webfont.eot?#iefix') format('embedded-opentype'),
+         url('coveredbyyourgrace-webfont.svg#covered_by_your_graceregular') format('svg'), 
+         url('coveredbyyourgrace-webfont.woff') format('woff'),
+         url('coveredbyyourgrace-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    /*将SVG字体前置是为了照顾在Windows系统的Chrome*/
+}
+nav ul li{
+  float: left;
+}
+h1{
+  font-size: 1.5em; /* 24px/16px */
+}
+.clearfix:after{
+  content: ".";
+  display: block;;
+  height: 0px;
+  visibility: hidden;
+  clear: both;
+}
+/* 布局 */
+#main,#asidepart{
+  float: left;
+}
+#main{
+  width: 960px;
+  padding: 40px 0px 0px;
+}
+#container{
+  width: 1280px;
+  margin: 0 auto;
+}
+#asidepart{
+  width: 250px;
+  margin: 40px 0px 0px 30px;
+  background: #fafafa;
+  padding: 30px 20px;
+}
 /* ==========================================================================
-   main
+   头部
    ========================================================================== */
+/* Header部分 */
+header{
+  width: 100%;
+  height: 150px;
+  padding: 50px 0px 0px 0px;
+  -wibkit-box-shadow: 2px 4px 5px hsla(0,1%,1%,.2);
+  -moz-box-shadow: 2px 4px 5px hsla(0,1%,1%,.2);
+  -o-box-shadow: 2px 4px 5px hsla(0,1%,1%,.2);
+  box-shadow: 2px 4px 5px hsla(0,1%,1%,.2);
+  background: #ea6753;
+  color: #ffffff;
+  font-size: 18px;
+}
+header a{
+  color: #ffffff;
+  text-decoration: none;
+}
+header>div{
+  width: 1280px;
+  margin: 0 auto;
+}
+/* logo */
+div #logo{
+  display: block;
+  float: left;
+  position: relative;
+  width: 400px;
+}
+div #logo>a{
+  display: block;
+  float: left;
+  }
+img[alt="Alimon"]{
+  width: 380px;
+  height: 95px;
+}
+hgroup{
+  position: absolute;
+  left: 120px;
+  top: 0px;
+}
+h1.site-name a{
+  color: transparent;/*有图片logo*/
+}
+h2.blog-motto{
+  margin: 30px 0px 0px;
+  font-size: 16px;
+}
+/* 导航 */
+header nav ul li{
+  margin-right: 50px;
+}
+header nav ul{
+  margin: 100px 20px 0px 0px;
+  padding: 0;
+  float: right;
+}
+/* 搜索 */
+header form{
+  float: right;
+}
+/* ==========================================================================
+   博客首页主体
+   ========================================================================== */
+/* 文章列表 */
+.post{
+  background: #fafafa;
+  width: 940px;
+  margin: 0px 0px 2px 0px;
+  line-height: 1.8;
+}
+.post a{
+  display: block;
+  padding: 10px 10px 10px 10px;
+  border-left:8px solid #CCC; 
+  color: #817c7c;
+}
+.post a:hover{
+  border-left:8px solid #ea6753; 
+}
+.post a h1{
+  color: #2ca6cb;
+  line-height: 40px;
+  margin: 5px 0px;
+}
+.post a time{
+  display: block;
+  color: #000000;
+  margin: 5px 0px 10px 0px;
+  font-size: 13px;
+}
+/* 侧边栏 */
+aside ul{
+  border-top: 3px solid #cccccc;
+}
+.categorieslist,.tagslist{
+  margin-bottom: 40px;
+}
+.categorieslist ul li + li a,.categorieslist ul li a:first-child{
+  border-bottom: 1px solid #cccccc;
+}
+.categorieslist ul li a{
+  display: block;
+  padding: 8px 10px;
+  color: #8a8686;
+}
+.categorieslist ul li a:hover{
+  color: #ea6753;
+}
+.asidetitle{
+  font-size: 18px;
+  font-weight: 700;
+  color: #2ba6cb;
+  padding: 0px 0px 5px 0px;
+}
+div .tagslist ul li{
+  float: left;
+}
+div .tagslist ul li a{
+  color: #a4a2a3;
+  display: block;
+  float: left;
+  margin: 10px 10px;
+  padding: 2px 5px;
+  background: #dbdbdb;
+}
+/* ==========================================================================
+   底部
+   ========================================================================== */
+footer{
+  width: 100%;
+  background: #1f1f1f;
+  color: #ffffff;
+  font-family: covered_by_your_graceregular;
+}
+footer a{
+  color: #2ea5cd;
+}
+#footer{
+  width: 1250px;
+  margin: 0 auto;
+}
+.info{
+  
+} 
+.info p {
+  font-size: 24px;
+  line-height: 36px;
+}
+.copyright{
+  text-align: center;
+  font-size: 18px;
+}
