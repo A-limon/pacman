@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Alimon's Blog</title>
-	<meta name=”viewport” content=”width=device-width” />
+	<meta name=”viewport” content=”inytial-scale=1,width=device-width” />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -24,15 +24,17 @@
 					<li><a href="">关于</a></li>
 					<li><a href="">实验室</a></li>
 					<li><a href="">简历</a></li>
+					<li><form class="search">
+							<label>Search</label>
+							<input type="search" id="search" autocomplete="off" autocorrect="off" autocapitalize="off" />
+						</form></li>
 				</ul>
 			</nav>
-			<!--<form>
-				<input type="text"/>
-				<input type="button" value="搜索"/>
-			</form>-->
+			
 			</div>
 		</header>
-	<div id="container" class="clearfix">
+	<div id="container">
+
 		<div id="main">
 			<section class="post">
 				<a href="#" title="学习Git">
@@ -116,7 +118,7 @@
 			</aside>
 		</div>
 	</div>
-	<footer class="clearfix">
+	<footer>
 		<div id="footer" >
 			<section class="info">
 				<p>Hi,I'm YangJian.For now I'm a student at collage.<br/>
@@ -126,7 +128,6 @@
 			
 			<p class="copyright">Powered by <a href="" title="Github">Github</a> and <a href="" title="Jekyll">Jekyl</a> © 2013 <a href="" title="YangJian">YangJian</a></p>
 		</div>
-			
 	</footer>
 </body>
 </html>

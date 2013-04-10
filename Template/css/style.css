@@ -80,7 +80,7 @@ body {
     padding: 0;
     font-size: 100%;
     line-height: 1.5;
-    background: #111111;
+    background: #dddddd;
 }
 
 /* ==========================================================================
@@ -397,7 +397,9 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
+/* ==========================================================================
+   全局设定
+   ========================================================================== */
 /* 通用样式 */
 @font-face {
     font-family: 'covered_by_your_graceregular';
@@ -418,7 +420,7 @@ h1{
 }
 .clearfix:after{
   content: ".";
-  display: block;;
+  display: block;
   height: 0px;
   visibility: hidden;
   clear: both;
@@ -428,15 +430,16 @@ h1{
   float: left;
 }
 #main{
-  width: 960px;
-  padding: 40px 0px 0px;
+  width: 75%;/*960/1280*/
+  padding: 40px 0px 0px 0px;
 }
 #container{
-  width: 1280px;
+  width: 95%;/*1280/1380*/
   margin: 0 auto;
+  overflow: hidden;
 }
 #asidepart{
-  width: 250px;
+  width: 19.53125%;/*250px/1280*/
   margin: 40px 0px 0px 30px;
   background: #fafafa;
   padding: 30px 20px;
@@ -448,21 +451,21 @@ h1{
 header{
   width: 100%;
   height: 150px;
-  padding: 50px 0px 0px 0px;
+  padding: 3.125em 0em 0em 0em;/*50px/16px*/
   -wibkit-box-shadow: 2px 4px 5px hsla(0,1%,1%,.2);
   -moz-box-shadow: 2px 4px 5px hsla(0,1%,1%,.2);
   -o-box-shadow: 2px 4px 5px hsla(0,1%,1%,.2);
   box-shadow: 2px 4px 5px hsla(0,1%,1%,.2);
   background: #ea6753;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 1.125em;/*18px/16px*/
 }
 header a{
   color: #ffffff;
   text-decoration: none;
 }
 header>div{
-  width: 1280px;
+  width: 95%;/*1280/1380*/
   margin: 0 auto;
 }
 /* logo */
@@ -470,40 +473,58 @@ div #logo{
   display: block;
   float: left;
   position: relative;
-  width: 400px;
+  width: 31.25%;/*400px/1280*/
 }
 div #logo>a{
   display: block;
   float: left;
   }
 img[alt="Alimon"]{
-  width: 380px;
+  width: 380px;/*380px/400px*/
   height: 95px;
 }
 hgroup{
   position: absolute;
-  left: 120px;
-  top: 0px;
+  left: 7.5em;/*120/16*/
+  top: 0em;
 }
 h1.site-name a{
   color: transparent;/*有图片logo*/
 }
 h2.blog-motto{
-  margin: 30px 0px 0px;
-  font-size: 16px;
+  margin: 1.5625em 0em 0em;/*25/16*/
+  font-size: 1em;
 }
 /* 导航 */
 header nav ul li{
-  margin-right: 50px;
+  margin-right: 3.125em;/*50/16*/
+}
+header nav ul li:last-child{
+  margin-right: 0;
 }
 header nav ul{
-  margin: 100px 20px 0px 0px;
+  margin: 6.25em 1.25em 0em 0em;/*100/16,20/16*/
   padding: 0;
   float: right;
 }
 /* 搜索 */
 header form{
-  float: right;
+  float: left;
+  width: 200px;
+  margin: 0px 0px 0px 10px;
+}
+.search input{
+  float: left;
+  width: 100px;
+  outline: none;
+  border-radius: 8px;
+  background: transparent;
+  -webkit-transition:.2s width;
+  transition:2s width;
+}
+.search input:focus{width: 200px;}
+.search label {
+  display: none;
 }
 /* ==========================================================================
    博客首页主体
@@ -511,7 +532,7 @@ header form{
 /* 文章列表 */
 .post{
   background: #fafafa;
-  width: 940px;
+  width: 97.9166666%;/*940px/960*/
   margin: 0px 0px 2px 0px;
   line-height: 1.8;
 }
@@ -566,7 +587,7 @@ div .tagslist ul li a{
   color: #a4a2a3;
   display: block;
   float: left;
-  margin: 10px 10px;
+  margin: 5px 10px;
   padding: 2px 5px;
   background: #dbdbdb;
 }
@@ -583,7 +604,7 @@ footer a{
   color: #2ea5cd;
 }
 #footer{
-  width: 1250px;
+  width: 95%;/*1280/1380*/
   margin: 0 auto;
 }
 .info{
