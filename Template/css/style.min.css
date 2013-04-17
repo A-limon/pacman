@@ -1,4 +1,12 @@
 /*! normalize.css v2.1.0 | MIT License | */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
 *{margin: 0;padding: 0;-webkit-margin-before:0;-webkit-margin-after:0;}
 article,
 aside,
@@ -18,23 +26,55 @@ summary {
 li{
   list-style: none;
 }
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+
 audio,
 canvas,
 video {
     display: inline-block;
 }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
 audio:not([controls]) {
     display: none;
     height: 0;
 }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
 [hidden] {
     display: none;
 }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
 html {
-    font-family: Microsoft YaHei,\5fae\8f6f\96c5\9ed1,STHeiti,Helvetica, Arial, sans-serif; 
-    -webkit-text-size-adjust: 100%; 
-    -ms-text-size-adjust: 100%;
+    font-family: Microsoft YaHei,\5fae\8f6f\96c5\9ed1,STHeiti,Helvetica, Arial, sans-serif; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
 }
+
+/**
+ * Remove default margin.
+ */
+
 body {
     margin: 0;
     padding: 0;
@@ -42,35 +82,82 @@ body {
     line-height: 1.5;
     background: #dddddd;
 }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
 a{
   text-decoration: none;
 }
 a:focus {
-    outline: 0;
+    outline: thin dotted;
 }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
 a:active,
 a:hover {
     outline: 0;
   }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
 abbr[title] {
     border-bottom: 1px dotted;
 }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
 b,
 strong {
     font-weight: bold;
 }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
 dfn {
     font-style: italic;
 }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
 hr {
     -moz-box-sizing: content-box;
     box-sizing: content-box;
     height: 0;
 }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
 mark {
     background: #ff0;
     color: #000;
 }
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+
 code,
 kbd,
 pre,
@@ -78,15 +165,35 @@ samp {
     font-family: monospace, serif;
     font-size: 1em;
 }
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
 pre {
     white-space: pre-wrap;
 }
+
+/**
+ * Set consistent quote types.
+ */
+
 q {
     quotes: "\201C" "\201D" "\2018" "\2019";
 }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
 small {
     font-size: 80%;
 }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
 sub,
 sup {
     font-size: 75%;
@@ -94,63 +201,198 @@ sup {
     position: relative;
     vertical-align: baseline;
 }
+
 sup {
     top: -0.5em;
 }
+
 sub {
     bottom: -0.25em;
 }
 sup::before{
   content: " ";
 }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
 img {
     border: 0;
 }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
 svg:not(:root) {
     overflow: hidden;
 }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+
 figure {
     margin: 0;
 }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
 button,
 select {
     text-transform: none;
 }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
 button,
-html input[type="button"], 
+html input[type="button"], /* 1 */
 input[type="reset"],
 input[type="submit"] {
-    -webkit-appearance: button; 
-    cursor: pointer; 
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
 }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
 button[disabled],
 html input[disabled] {
     cursor: default;
 }
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+
 input[type="checkbox"],
 input[type="radio"] {
-    box-sizing: border-box;
-    padding: 0; 
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
 }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
 input[type="search"] {
-    -webkit-appearance: textfield;
+    -webkit-appearance: textfield; /* 1 */
     -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
     box-sizing: content-box;
 }
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
 }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
 button::-moz-focus-inner,
 input::-moz-focus-inner {
     border: 0;
     padding: 0;
 }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
 textarea {
-    overflow: auto; 
-    vertical-align: top;
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
 }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
@@ -158,63 +400,18 @@ table {
 /* ==========================================================================
    全局设定
    ========================================================================== */
-/* 特殊字体 */
+/* 通用样式 */
 @font-face {
     font-family: 'covered_by_your_graceregular';
-    src: url('../font/coveredbyyourgrace-webfont.eot');
-    src: url('../font/coveredbyyourgrace-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../font/coveredbyyourgrace-webfont.svg#covered_by_your_graceregular') format('svg'), 
-         url('../font/coveredbyyourgrace-webfont.woff') format('woff'),
-         url('../font/coveredbyyourgrace-webfont.ttf') format('truetype');
+    src: url('coveredbyyourgrace-webfont.eot');
+    src: url('coveredbyyourgrace-webfont.eot?#iefix') format('embedded-opentype'),
+         url('coveredbyyourgrace-webfont.svg#covered_by_your_graceregular') format('svg'), 
+         url('coveredbyyourgrace-webfont.woff') format('woff'),
+         url('coveredbyyourgrace-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     /*将SVG字体前置是为了照顾在Windows系统的Chrome*/
 }
-/* 社交font */
-[class^="icon-"]:before,
-[class*=" icon-"]:before {
-  font-family: 'fontello';
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: 0.2em;
-  text-align: center;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1em;
-  margin-left: 0.2em;
-  font-size: 120%; 
-  text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3);
-}
-@font-face {
-  font-family: 'fontello';
-  src: url("../font/fontello.eot");
-  src: url("../font/fontello.eot#iefix") format('embedded-opentype'), url("../font/fontello.woff") format('woff'), url("../font/fontello.ttf") format('truetype'), url("../font/fontello.svg#fontello") format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-  @font-face {
-    font-family: 'fontello';
-    src: url('../font/fontello.svg#fontello') format('svg');
-  }
-}
-.icon-mail:before { content: '\2709'; } 
-.icon-print:before { content: '\e716'; }
-.icon-chat:before { content: '\e720'; }
-.icon-rss:before { content: '\e73a'; } 
-.icon-github:before { content: '\f300'; } 
-.icon-twitter:before { content: '\f309'; } 
-.icon-facebook-squared:before { content: '\f30e'; } 
-.icon-gplus:before { content: '\f30f'; }
-.icon-renren:before { content: '\f33c'; } 
-.icon-sina-weibo:before { content: '\f33f'; }
-.icon-download:before { content: '📥'; } 
-.icon-search:before { content: '🔍'; } 
-/* 其他样式 */
 nav ul li{
   float: left;
 }
@@ -224,33 +421,28 @@ h1{
 .clearfix:after{
   content: ".";
   display: block;
-  height: 0;
+  height: 0px;
   visibility: hidden;
   clear: both;
 }
-::-webkit-input-placeholder { color:#fafafa; padding: 2px 0 0 4px;}
-::-moz-placeholder { color:#fafafa; padding: 2px 0 0 4px;} /* firefox 19+ */
-:-moz-placeholder { color:#fafafa; padding: 2px 0 0 4px;}
-:-ms-input-placeholder { color:#fafafa; padding: 2px 0 0 4px;} /* ie */
-input:-moz-placeholder { color:#fafafa; padding: 2px 0 0 4px;}
 /* 布局 */
-#container{
-  width: 95%;/*1280/1380*/
-  margin: 0 auto;
-  overflow: hidden;
-}
 #main,#asidepart{
   float: left;
 }
 #main{
   width: 75%;/*960/1280*/
-  padding: 2.5em 0 0;/*40*/
+  padding: 40px 0px 0px 0px;
+}
+#container{
+  width: 95%;/*1280/1380*/
+  margin: 0 auto;
+  overflow: hidden;
 }
 #asidepart{
   width: 19.53125%;/*250px/1280*/
-  margin: 2.5em 0 0 1.5em;/*40,30*/
+  margin: 40px 0px 0px 30px;
   background: #fafafa;
-  padding: 1.875em 1.25em;/*30,20*/
+  padding: 30px 20px;
 }
 /* ==========================================================================
    头部
@@ -258,14 +450,15 @@ input:-moz-placeholder { color:#fafafa; padding: 2px 0 0 4px;}
 /* Header部分 */
 header{
   width: 100%;
-  padding: 2.5em 0 1.25em 0;/*40,20*/
+  height: 150px;
+  padding: 3.125em 0em 0em 0em;/*50px/16px*/
   -wibkit-box-shadow: 2px 4px 5px hsla(0,1%,1%,.2);
   -moz-box-shadow: 2px 4px 5px hsla(0,1%,1%,.2);
   -o-box-shadow: 2px 4px 5px hsla(0,1%,1%,.2);
   box-shadow: 2px 4px 5px hsla(0,1%,1%,.2);
   background: #ea6753;
   color: #ffffff;
-  font-size: 1.125em;/*18px*/
+  font-size: 1.125em;/*18px/16px*/
 }
 header a{
   color: #ffffff;
@@ -280,65 +473,56 @@ div #logo{
   display: block;
   float: left;
   position: relative;
-  width: 32.8125%;/*420px/1280*/
+  width: 31.25%;/*400px/1280*/
 }
 div #logo>a{
   display: block;
   float: left;
   }
 img[alt="Alimon"]{
-  width: 22em;/*352px*/
-  height: 6.82em;/*109*/
+  width: 380px;/*380px/400px*/
+  height: 95px;
 }
 hgroup{
   position: absolute;
-  left: 5.9375em;/*95/16*/
-  top: 0.625em;/*10/16*/
+  left: 7.5em;/*120/16*/
+  top: 0em;
 }
 h1.site-name a{
   color: transparent;/*有图片logo*/
 }
 h2.blog-motto{
-  margin: 1.5625em 0 0 0.3125em;/*25,5*/
+  margin: 1.5625em 0em 0em;/*25/16*/
   font-size: 1em;
-  font-weight: normal;
 }
 /* 导航 */
-header nav{
-  float: left;
-  margin: 6.25em 1.25em 0 0;/*100,20*/
-  padding: 0;
-}
-header nav ul{
-  float: left;
-}
 header nav ul li{
   margin-right: 3.125em;/*50/16*/
 }
 header nav ul li:last-child{
   margin-right: 0;
 }
+header nav ul{
+  margin: 6.25em 1.25em 0em 0em;/*100/16,20/16*/
+  padding: 0;
+  float: right;
+}
 /* 搜索 */
 header form{
   float: left;
-  width: 12em;/*192*/
-  margin: 0 0 0 0.625em;
+  width: 200px;
+  margin: 0px 0px 0px 10px;
 }
 .search input{
   float: left;
-  width: 6.25em;
-  padding: 2px 0px;
-  line-height: 1em;
+  width: 100px;
   outline: none;
-  border: 1px solid #fafafa;
-  font-size: 0.875em;
-  color: #fafafa;
-  border-radius: 3px;
+  border-radius: 8px;
   background: transparent;
   -webkit-transition:.2s width;
   transition:2s width;
 }
-.search input:focus{width: 12em;}
+.search input:focus{width: 200px;}
 .search label {
   display: none;
 }
@@ -396,9 +580,6 @@ aside ul{
   color: #2ba6cb;
   padding: 0px 0px 5px 0px;
 }
-div .tagslist ul li:nth-child(1),div .tagslist ul li:nth-child(2){
-  margin-top: 5px;
-}
 div .tagslist ul li{
   float: left;
 }
@@ -409,16 +590,6 @@ div .tagslist ul li a{
   margin: 5px 10px;
   padding: 2px 5px;
   background: #dbdbdb;
-}
-.rsspart{
-  background: #ea6753;
-}
-.rsspart a{
-  display: block;
-  padding: 10px 0px;
-  text-align: center;
-  font-size: 1em;
-  color: #ffffff;
 }
 /* ==========================================================================
    底部
@@ -463,18 +634,6 @@ footer a{
   height: 100px;
   border-left:2px solid #dddddd;
   margin: 0px 0px 0px 80px;
-}
-.social-font{
-  float: left;
-  width: 200px;
-  margin: 100px 0 0 100px;
-  font-size: 1.5em;
-}
-.social-font a{
-  display: block;
-  width: 40px;
-  float: left;
-  color: #ffffff;
 }
 .author{
   width: 115px;

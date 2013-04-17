@@ -8,7 +8,7 @@
 </head>
 <body>
 	<header>
-		<div>
+		<div class="clearfix">
 			<div id="logo">
 			<a href="index.html"><img src="img/logo.svg" alt="Alimon"/></a>
 			<hgroup>
@@ -26,7 +26,7 @@
 					<li><a href="">简历</a></li>
 					<li><form class="search">
 							<label>Search</label>
-							<input type="search" id="search" autocomplete="off" autocorrect="off" autocapitalize="off" />
+							<input type="search" id="search" autocomplete="off" autocorrect="off" autocapitalize="off" maxlength="10" placeholder="Search" />
 						</form></li>
 				</ul>
 			</nav>
@@ -34,7 +34,6 @@
 			</div>
 		</header>
 	<div id="container">
-
 		<div id="main">
 			<section class="post">
 				<a href="#" title="学习Git">
@@ -115,18 +114,30 @@
 						<li><a href="" title="">web<sup>3</sup></a></li>
 					</ul>
 				</div>
+				<div class="rsspart">
+					<a href="" target="_blank" title="RSS 订阅"><i class="icon-rss"></i>RSS 订阅</a>
+				</div>
 			</aside>
 		</div>
 	</div>
 	<footer>
 		<div id="footer" >
+			<div class="line">
+				<span></span>
+				<div class="author"></div>
+			</div>
 			<section class="info">
 				<p>Hi,I'm YangJian.For now I'm a student at collage.<br/>
-				Font-end development is my interest which I'd like to share with you at this blog.<br/>
+				Web development is my interest which I'd like to share with you at this blog.<br/>
 				</p>
 			</section>
-			
-			<p class="copyright">Powered by <a href="" title="Github">Github</a> and <a href="" title="Jekyll">Jekyl</a> © 2013 <a href="" title="YangJian">YangJian</a></p>
+			<div class="social-font">
+				<a href="http://weibo.com/436062867" target="_blank" title="新浪微博"><i class="icon-sina-weibo"></i></a>
+				<a href="https://twitter.com/yangjiansky" target="_blank" title="twitter"><i class="icon-twitter"></i></a>
+				<a href="https://github.com/A-limon" target="_blank" title="github"><i class="icon-github"></i></a>
+				<a href="https://www.facebook.com/yangjian" target="_blank" title="facebook"><i class="icon-facebook-squared"></i></a>
+			</div>
+			<p class="copyright">Powered by <a href="https://github.com/A-limon/a-limon.github.com" target="_blank" title="Github">Github</a> and <a href="http://jekyllbootstrap.com/" target="_blank"title="Jekyll">Jekyl</a> © 2013 <a href="http://www.yangjian.me" title="YangJian">YangJian</a></p>
 		</div>
 	</footer>
 </body>
