@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Alimon's Blog</title>
-	<meta name=”viewport” content=”inytial-scale=1,width=device-width” />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -16,9 +16,12 @@
 				<h2 class="blog-motto">业精于勤而荒于嬉,行成于思而毁于随</h2>
 			</hgroup>
 			</div>
+			<div class="navbar"><a class="navbutton" href="#">
+				<i class="icon-menu"></i>
+			</a></div>
 			<nav>
 				<ul>
-					<li><a href="index.html">博客</a></li>
+					<li><a href="index.html" class="actived">博客</a></li>
 					<li><a href="">归档</a></li>
 					<li><a href="">笔记</a></li>
 					<li><a href="">关于</a></li>
@@ -140,5 +143,13 @@
 			<p class="copyright">Powered by <a href="https://github.com/A-limon/a-limon.github.com" target="_blank" title="Github">Github</a> and <a href="http://jekyllbootstrap.com/" target="_blank"title="Jekyll">Jekyl</a> © 2013 <a href="http://www.yangjian.me" title="YangJian">YangJian</a></p>
 		</div>
 	</footer>
+	<script src="js/jquery-2.0.0.min.js"></script>
+	<!--<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>-->
+	<script type="text/javascript">
+	$('.navbar').click(function(){
+		$('header nav').slideToggle("slow");
+	});
+
+	</script>
 </body>
 </html>
