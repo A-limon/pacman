@@ -1,3 +1,6 @@
+/* ==========================================================================
+   重置默认样式
+   ========================================================================== */
 /*! normalize.css v2.1.0 | MIT License | */
 *{margin: 0;padding: 0;-webkit-margin-before:0;-webkit-margin-after:0;}
 article,
@@ -50,6 +53,7 @@ a:focus,
 a:active,
 a:hover {
     outline: 0;
+    transition: color .25s,background .5s; 
   }
 abbr[title] {
     border-bottom: 1px dotted;
@@ -292,6 +296,7 @@ header a{
   color: #ffffff;
   text-decoration: none;
 }
+
 header>div{
   width: 95%;/*1280/1380*/
   margin: 0 auto;
@@ -301,19 +306,13 @@ header>div{
 div #logo{
   display: block;
   position: relative;
-  /*width: 32.8125%;420px/1280*/
 }
-div #logo>a{
-  display: block;
-  }
 img[alt="Alimon"]{
   width: 22em;/*352px*/
   height: 6.82em;/*109*/
 }
 hgroup{
   position: absolute;
-  left: 4.2em;
-  top: 2em;
 }
 h1.site-name a{
   color: transparent;/*有图片logo*/
@@ -325,7 +324,6 @@ h2.blog-motto{
 /* 导航 */
 header nav{
   float: right;
-  margin: 6.25em 0 0;/*100,20*/
   padding: 0;
 }
 header nav ul{
@@ -336,18 +334,15 @@ header nav ul li a{
   padding: 0.1875em 1.5625em;
 }
 header nav ul li:last-child{
-  padding: 0.3125em 0 0;
+  padding: 0.4em 0 0;
 }
 /* 搜索 */
 header form{
   float: left;
-  width: 12em;/*192*/
   margin: 0 0 0 0.625em;
 }
 .search input{
   float: left;
-  width: 6.25em;
-  padding: 2px 0;
   line-height: 1em;
   outline: none;
   border: 1px solid #fafafa;
@@ -355,8 +350,10 @@ header form{
   color: #fafafa;
   border-radius: 0.1875em;
   background: transparent;
+  transition: none;
+  width: 90%;
 }
-.search input:focus{width: 12em;}
+.search input:focus{width: 90%;}
 .search label {
   display: none;
 }
@@ -372,9 +369,9 @@ header form{
 }
 .post a{
   display: block;
-  padding: 0.625em;/*10*/
   border-left:0.5em solid #CCC; /*8*/
   color: #817c7c;
+  transition: border-left .45s;
 }
 .post a:hover{
   border-left:0.5em solid #ea6753; 
@@ -428,6 +425,9 @@ div .tagslist ul li a{
   padding: 0.125em 0.3125em;
   background: #dbdbdb;
 }
+div .tagslist ul li a:hover{
+  color: #ea6753;
+  }
 .rsspart{
   background: #ea6753;
 }
@@ -438,6 +438,10 @@ div .tagslist ul li a{
   font-size: 1em;
   color: #ffffff;
 }
+.rsspart a:hover{
+  color: #ea6753;
+  background: #fafafa;
+  }
 /* ==========================================================================
    底部
    ========================================================================== */
@@ -450,6 +454,9 @@ footer{
 }
 footer a{
   color: #2ea5cd;
+}
+footer a:hover{
+  color: #77428D;
 }
 #footer{
   width: 95%;/*1280/1380*/
@@ -494,6 +501,9 @@ footer a{
   float: left;
   color: #ffffff;
 }
+.social-font a:hover{
+  color: #2ea5cd;
+  }
 .author{
   width: 7.1875em;/*115*/
   height: 7.1875em;
@@ -507,9 +517,10 @@ footer a{
 }
 
 /* ==========================================================================
-   for smart phone(320px)
+   for Smartphone(iphone& some android phones)(320px)
    ========================================================================== */
 @media only screen and (min-width: 320px) {
+  /*布局*/
   #main,#asidepart{
     float: none;
   }
@@ -522,7 +533,7 @@ footer a{
     margin: 1em 0 0 1%;
     padding: 0 2%;
   }
-  /*头部导航*/
+  /*导航*/
   header{
     padding: 1em 0;
   }
@@ -532,10 +543,10 @@ footer a{
   }
   div #logo{
     padding: 0;
-    max-width: 320px;
   }
-  div #logo h1{
-    
+  hgroup{
+    left: 4.2em;
+    top: 2em;
   }
   h1.site-name a{
     font-size: 0.5em;
@@ -574,6 +585,7 @@ footer a{
   }
   header nav ul li a:hover{
     background: #d65441;
+    color: #E9CD4C;
   }
   .actived{
     background: #d65441;
@@ -581,26 +593,29 @@ footer a{
   /* 搜索 */
   header form{
     float: left;
-    width: 10em;/*192*/
+    width: 10em;
     margin: 0 0 0 0.625em;
   }
   .search input{
-    width: 17em;
+    width: 90%;
+    line-height: 1.6em;
   }
-  .search input:focus{width: 17em;}
+  .search input:focus{width: 90%;}
     /* 文章列表 */
   .post{
     width: 100%;
   }
   .post a{
     display: block;
-    padding: 0.3em;
+    padding: 0.6em;
   }
   .post a h1{
-    color: #2ca6cb;
     line-height: 1.5em;
   }
   /* 侧边栏 */
+  aside{
+    overflow: hidden;
+  }
   .categorieslist,.tagslist{
     margin-bottom: 0.3em;/*40*/
   }
@@ -646,15 +661,187 @@ footer a{
     top: 6.0625em;/*97*/
     margin:0 0 0 1.5em;/*24*/
     background-size: 6.875em 6.875em;/*110*/
-  }
-  
+  }  
 }
-
-@media only screen and (min-width: 1024px){
-
-    img[alt="Alimon"]{
-    width: 22em;/*352px*/
-    height: 6.82em;/*109*/
+/* ==========================================================================
+   for Tablet(ipad mini) or BigPhone (768px)
+   ========================================================================== */
+@media only screen and (min-width: 768px){
+    #container{
+      width: 96%;
     }
-
+    img[alt="Alimon"]{
+      width: 18em;
+      height: 5.45em;
+    }
+    hgroup{
+      left: 5.3em;
+      top: 2em;
+    }
+    h1.site-name{
+      font-size: 2em;
+    }
+    h2.blog-motto{
+      font-size: 0.86em;
+    }
+    header nav ul li a{
+      width: 90%;
+      padding-left: 2em ;
+    }
+    header form{
+      width: 95%;
+    }
+    .search input{
+      width: 95%;
+    }
+    .search input:focus{width: 95%;}
+    .post a{
+      padding: 1em;
+    }
+    .categorieslist,.tagslist,.rsspart{
+      float: left;
+    }
+    .categorieslist{
+      width: 45%;
+    }
+    .tagslist,.rsspart{
+      margin-left: 7%;
+      width: 40%;
+    }
+    .info{
+      float: left;
+      margin:7em 0 3em 1.875em;
+      width: 70%;
+    } 
+    .line{
+      float: left;
+    }
   }
+ /* ==========================================================================
+   for Netbook or ipad retina (1024px)
+  ========================================================================== */
+@media only screen and (min-width: 1024px){
+    /*布局*/
+    #container{
+      width: 95%;
+    }
+    #main,#asidepart{
+      float: left;
+    }
+    #main{
+      width: 74%;
+      margin: 1em 0 0;
+    }
+    #asidepart{
+      width: 19%;
+      margin: 2em 0 0 3%;
+      padding: 1.875em 1.5625%;/*30,20*/
+    }
+    /*头部*/
+    img[alt="Alimon"]{
+      width: 20em;
+      height: 6em;
+    }
+    h2.blog-motto{
+      font-size: 100%;
+    }
+    hgroup{
+      left: 5.85em;
+      top: 2.35em;
+    }
+    /* 导航 */
+    div .navbar{
+      display: none;
+    }
+    header{
+      padding: 1.5em 0 1em 0;
+    }
+    header nav{
+      display: block;
+      margin-top:0.5em; 
+    }
+    header nav ul li{
+      width: auto;
+    }
+    header nav ul li a{
+      padding-left: 1.52em;
+      width: auto;
+    }
+    /* 搜索 */
+    header form{
+      width: auto;
+    }
+    .search input{
+      width: 6.25em;
+      padding: 2px 0;
+      line-height: 1em;
+      -webkit-transition:.5s width;
+      transition:.5s width;
+    }
+    .search input:focus{width: 12em;}
+    /* 文章列表 */
+    .post a h1{
+      line-height: 2em;/*40*/
+      margin: 0.085em 0;/*3*/
+    }
+    /* 侧边栏 */
+    .categorieslist,.tagslist,.rsspart{
+      float: none;
+    }
+    .categorieslist{
+      width: 100%;
+    }
+    .tagslist,.rsspart{
+      margin-left: 0;
+      width: 100%;
+    }
+    .categorieslist,.tagslist{
+      margin-bottom: 2.5em;
+    }
+    .categorieslist ul li a{
+      padding: .5em 0.625em;
+    }
+    .asidetitle{
+      padding: 0 0 0.3125em 0;/*5*/
+    }
+    div .tagslist ul li:nth-child(1),div .tagslist ul li:nth-child(2){
+      margin-top: 0.3125em;
+    }
+    div .tagslist ul li{
+      float: left;
+    }
+    /*底部*/
+    footer{
+      position: relative;
+    }
+    .info{
+      margin:7.5em 0 0 1.875em;/*120,30*/
+    } 
+    .social-font{
+      top: 3em;
+      right: 4em;
+      position: absolute;
+    }
+  }
+   /* ==========================================================================
+   for Desktop (1560px)
+  ========================================================================== */
+ @media only screen and (min-width: 1560px){
+    img[alt="Alimon"]{
+      width: 26em;
+      height: 8em;
+    }
+    hgroup{
+      left: 7.4em;
+      top: 3.8em;
+    }
+    #container{
+      width: 82%;
+    }
+    header>div{
+      width: 82%;
+    }
+    #footer{
+      width: 82%;
+    }
+}

@@ -29,7 +29,7 @@
 					<li><a href="">简历</a></li>
 					<li><form class="search">
 							<label>Search</label>
-							<input type="search" id="search" autocomplete="off" autocorrect="off" autocapitalize="off" maxlength="10" placeholder="Search" />
+							<input type="search" id="search" autocomplete="off" autocorrect="off" autocapitalize="off" maxlength="20" placeholder="Search" />
 						</form></li>
 				</ul>
 			</nav>
@@ -146,10 +146,31 @@
 	<script src="js/jquery-2.0.0.min.js"></script>
 	<!--<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>-->
 	<script type="text/javascript">
-	$('.navbar').click(function(){
-		$('header nav').slideToggle("slow");
-	});
+	$(document).ready(function()         
+	{	
+		$('.navbar').click(function(){
+			$('header nav').slideToggle("slow");
+		});
+		var myWidth = 0;
+    	function getSize(){
+    		if( typeof( window.innerWidth ) == 'number' ) {
+    			myWidth = window.innerWidth;
+           	 } else if( document.documentElement && document.documentElement.clientWidth) {
+             	myWidth = document.documentElement.clientWidth;
+            };
+        };
+    	getSize(); 
+    	//document.getElementById("test").innerHTML =myWidth;
+        $(window).resize(function(){
+        	getSize(); 
+        	if (myWidth >= 1024||(document.activeElement.id=='search')) {
+        		$('nav').css('display', 'block') ;
+			}else{
+				$('nav').css('display', 'none') ;
+			}
+        });
 
+	});
 	</script>
 </body>
 </html>
