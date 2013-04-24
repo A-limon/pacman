@@ -281,7 +281,7 @@ h1{
    头部
    ========================================================================== */
 /* Header部分 */
-header{
+body>header{
   width: 100%;
   padding: 2.5em 0 1.25em 0;/*40,20*/
   -wibkit-box-shadow: 2px 4px 5px hsla(0,1%,1%,.2);
@@ -292,12 +292,12 @@ header{
   color: #ffffff;
   font-size: 1.125em;/*18px*/
 }
-header a{
+body>header a{
   color: #ffffff;
   text-decoration: none;
 }
 
-header>div{
+body>header>div{
   width: 95%;/*1280/1380*/
   margin: 0 auto;
   position: relative;
@@ -322,22 +322,22 @@ h2.blog-motto{
   font-weight: normal;
 }
 /* 导航 */
-header nav{
+body>header nav{
   float: right;
   padding: 0;
 }
-header nav ul{
+body>header nav ul{
   float: left;
 }
-header nav ul li a{
+body>header nav ul li a{
   display: block;
   padding: 0.1875em 1.5625em;
 }
-header nav ul li:last-child{
+body>header nav ul li:last-child{
   padding: 0.4em 0 0;
 }
 /* 搜索 */
-header form{
+body>header form{
   float: left;
   margin: 0 0 0 0.625em;
 }
@@ -515,6 +515,48 @@ footer a:hover{
   background-position: left top;
   background-size: 6.875em 6.875em;/*110*/
 }
+/* ==========================================================================
+   单独文章页面
+   ========================================================================== */
+.postpart{
+  background: #fafafa;
+  padding: 0 !important;
+  color: #717171;
+}
+.postpart a{
+  color:#2aa4c9;
+}
+#main>header{
+  padding: 1em 0 0 1em;
+  border-left: 5px solid #ea6753;
+}
+#main>header h1{
+  font-size: 200%;
+  line-height: 2em;
+  color: #2ca6cb;
+  padding-left:0.5em; 
+  width: 65%;
+  float: left;
+}
+#main>header h1 a{
+   display: block;
+   color: #2ca6cb;
+}
+#main>header p{
+  float: right;
+  width: 25%;
+  margin: 2em 2em 0 0; 
+  padding: 0 0 0.125em 0;
+  text-align: right;
+  border-bottom: 1px solid #dddddd;
+}
+article{
+  padding: 2em 2em;
+  line-height: 1.85em;
+}
+article img{
+  width: 100%;
+}
 
 /* ==========================================================================
    for Smartphone(iphone& some android phones)(320px)
@@ -534,7 +576,7 @@ footer a:hover{
     padding: 0 2%;
   }
   /*导航*/
-  header{
+  body>header{
     padding: 1em 0;
   }
   img[alt="Alimon"]{
@@ -571,19 +613,19 @@ footer a:hover{
   .navbutton:active{
     background: #db533e;
   }
-  header nav{
+  body>header nav{
     margin: 0;
     display: none;
   }
-  header nav ul li{
+  body>header nav ul li{
     width: 100%;
     padding: 0.125em 0;
   }
-  header nav ul li a{
+  body>header nav ul li a{
     width: 80%;
     padding-left: 1.5em ;
   }
-  header nav ul li a:hover{
+  body>header nav ul li a:hover{
     background: #d65441;
     color: #E9CD4C;
   }
@@ -591,7 +633,7 @@ footer a:hover{
     background: #d65441;
   }
   /* 搜索 */
-  header form{
+  body>header form{
     float: left;
     width: 10em;
     margin: 0 0 0 0.625em;
@@ -684,11 +726,11 @@ footer a:hover{
     h2.blog-motto{
       font-size: 0.86em;
     }
-    header nav ul li a{
+    body>header nav ul li a{
       width: 90%;
       padding-left: 2em ;
     }
-    header form{
+    body>header form{
       width: 95%;
     }
     .search input{
@@ -753,22 +795,22 @@ footer a:hover{
     div .navbar{
       display: none;
     }
-    header{
+    body>header{
       padding: 1.5em 0 1em 0;
     }
-    header nav{
+    body>header nav{
       display: block;
       margin-top:0.5em; 
     }
-    header nav ul li{
+    body>header nav ul li{
       width: auto;
     }
-    header nav ul li a{
+    body>header nav ul li a{
       padding-left: 1.52em;
       width: auto;
     }
     /* 搜索 */
-    header form{
+    body>header form{
       width: auto;
     }
     .search input{
@@ -838,7 +880,7 @@ footer a:hover{
     #container{
       width: 82%;
     }
-    header>div{
+    body>header>div{
       width: 82%;
     }
     #footer{
