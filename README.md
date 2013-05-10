@@ -1,4 +1,4 @@
 pacman
 ======
 
-A theme for jekyll
+A theme for hexo

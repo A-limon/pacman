@@ -5,6 +5,7 @@
 	<title>学习Git--Alimon's Blog</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/prettify.css">
 </head>
 <body>
 	<header>
@@ -41,13 +42,12 @@
 			<header class="clearfix">
 				<h1><a href="#" title="学习Git">学习Git</a></h1>
 					<p>By<a href="#" title="YangJian">YangJian</a>on<time>March 3,2013</time></p>
-				<div class="share">
-					
+				<div class="share">	
 				</div>
 			</header>
 			<article>
 				<blockquote>
-					<p><a href='http://git-scm.com/'>Git</a>是一个免费开源的分布式版本控制系统，用于以高效、迅速的方式&gt;处理从很小到非常大的项目。<br /><a href='https://github.com/'>Github</a>是程序员的名片。<br />代码，是程序员沟通的最直接的手段。</p>
+					<p><a href='http://git-scm.com/'>Git</a>是一个免费开源的分布式版本控制系统，用于以高效、迅速的方式处理从很小到非常大的项目。<br /><a href='https://github.com/'>Github</a>是程序员的名片。<br />代码，是程序员沟通的最直接的手段。</p>
 				</blockquote>
 				<p><img src="img/github.jpg" title="github" alt="github"/></p>
 				<p>使用Git应该是每一位程序员的必备技能（钟情于SVN的亲们勿喷），Git被很多IT公司使用并在开源届和圈内有着巨大的声誉，之前团队做项目经常使用的也都是SVN现在接触了Github后，学习掌握Git也成了顺理成章的事情。希望这篇短文可以帮助到Git的初学者，我们共同学习。</p>
@@ -60,23 +60,33 @@
 				<li>各种英文看不懂？来看看<a href='http://rogerdudler.github.com/git-guide/index.zh.html'>Git 简易指南</a> 。</li>
 				<li>进阶篇：<a href='http://marklodato.github.com/visual-git-guide/index-zh-cn.html'>Git图解</a>，<a href='http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_cn/index.html'>Git Magic</a>，<a href='http://think-like-a-git.net/'>Think like a Git</a>。</li>
 				</ul>
-				<h2 id='github'>Github入门</h2>
 				<p>Github是一群有趣的人在做的有趣的事，Github不仅仅简单的是Git服务器，更是发展成了Social Coding，在Github你可以得到的绝对超出你的想象。</p>
+				<h3 id='github'>Github入门</h3>
 				<ul>
 				<li>Github提供了官方的<a href='https://help.github.com/'>帮助信息</a>和他们的<a href='https://github.com/blog'>博客</a>。</li>
 				<li>《Git权威指南》一书的作者编写的<a href='http://www.worldhello.net/gotgithub/01-explore-github/index.html'>GotGitHub</a>是一份非常好的学习资料。</li>
 				<li>好文两篇：<a href='http://www.yangzhiping.com/tech/github.html'>如何高效利用Github</a>，<a href='http://www.cnblogs.com/fnng/archive/2012/01/07/2315685.html'>Gthub初级运用</a>。</li>
 				</ul>
+				<h4>测试h4标题</h4>
 				<p>最好的学习当然是Learning by doing！<br />ps：<a href='https://github.com/A-limon'>我的Github账户</a> 。</p>
+				<pre><code><span class="comment">/* 彩色标签云 */</span>
+				<span class="function"><span class="keyword">function</span> <span class="title">colorCloud</span><span class="params">(<span class="variable">$text</span>)</span> 
+				{</span><span class="variable">$text</span> = preg_replace_callback(<span class="string">'||i'</span>, <span class="string">'colorCloudCallback'</span>, <span class="variable">$text</span>); <span class="keyword">return</span> <span class="variable">$text</span>; }        
+				<span class="function"><span class="keyword">function</span> <span class="title">colorCloudCallback</span><span class="params">(<span class="variable">$matches</span>)</span>
+				{</span><span class="variable">$text</span> = <span class="variable">$matches</span>[<span class="number">1</span>]; <span class="variable">$color</span> = dechex(rand(<span class="number">0</span>,<span class="number">16777215</span>)); 
+				<span class="variable">$pattern</span> = <span class="string">'/class=(\'|\")(.*)(\'|\")/i'</span>; 
+				<span class="variable">$text</span> = preg_replace(<span class="variable">$pattern</span>, <span class="string">"class=\"color:#{$color};$2;\""</span>, <span class="variable">$text</span>); 
+				<span class="keyword">return</span> <span class="string">""</span>; }
+				add_filter(<span class="string">'wp_tag_cloud'</span>, <span class="string">'colorCloud'</span>, <span class="number">1</span>);
+				</code></pre>
 			</article>
-			<div class="pagepart">
-				<a href="#" title="全新博客主题">全新博客主题</a>
-				<a href="#" title="我的2012">我的2012</a>
+			<div class="pagepart clearfix">
+				<a href="#" class="prev" title="全新博客主题">全新博客主题</a>
+				<a href="#" class="next" title="我的2012">我的2012</a>
 			</div>
 			<section class="comment">
-				
+				<p>文章评论</p>
 			</section>
-
 		</div>
 		<div id="asidepart">
 			<aside>
@@ -123,10 +133,11 @@
 				<a href="https://github.com/A-limon" target="_blank" title="github"><i class="icon-github"></i></a>
 				<a href="https://www.facebook.com/yangjian" target="_blank" title="facebook"><i class="icon-facebook-squared"></i></a>
 			</div>
-			<p class="copyright">Powered by <a href="https://github.com/A-limon/a-limon.github.com" target="_blank" title="Github">Github</a> and <a href="http://jekyllbootstrap.com/" target="_blank"title="Jekyll">Jekyl</a> © 2013 <a href="http://www.yangjian.me" title="YangJian">YangJian</a></p>
+			<p class="copyright">Powered by <a href="https://github.com/A-limon/a-limon.github.com" target="_blank" title="Github">Github</a> and <a href="http://zespia.tw/hexo/" target="_blank"title="hexo">hexo</a> © 2013 <a href="http://www.yangjian.me" title="YangJian">YangJian</a></p>
 		</div>
 	</footer>
 	<script src="js/jquery-2.0.0.min.js"></script>
+	<script src="js/prettify.js"></script>
 	<!--<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>-->
 	<script type="text/javascript">
 	$(document).ready(function()         
@@ -152,7 +163,9 @@
 				$('nav').css('display', 'none') ;
 			}
         });
-
+    //代码高亮    
+ 	$("pre").addClass("prettyprint linenums");
+    prettyPrint();
 	});
 	</script>
 </body>

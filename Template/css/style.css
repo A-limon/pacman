@@ -18,7 +18,7 @@ section,
 summary {
     display: block;
 }
-li{
+header li,nav li,footer li,aside li{
   list-style: none;
 }
 audio,
@@ -78,11 +78,13 @@ code,
 kbd,
 pre,
 samp {
-    font-family: monospace, serif;
+    font-family: Monaco,"Courier New";
     font-size: 1em;
 }
 pre {
     white-space: pre-wrap;
+    margin: 0.5em 2%;
+    padding: 0.5em 2%;
 }
 q {
     quotes: "\201C" "\201D" "\2018" "\2019";
@@ -301,6 +303,7 @@ body>header>div{
   width: 95%;/*1280/1380*/
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
 }
 /* logo */
 div #logo{
@@ -313,6 +316,9 @@ img[alt="Alimon"]{
 }
 hgroup{
   position: absolute;
+}
+h1.site-name{
+  height: 0.75em;
 }
 h1.site-name a{
   color: transparent;/*有图片logo*/
@@ -367,6 +373,7 @@ body>header form{
   margin: 0 0 0.125em 0;
   line-height: 1.8;
 }
+.post:last-child{margin: 0;}
 .post a{
   display: block;
   border-left:0.5em solid #CCC; /*8*/
@@ -387,6 +394,28 @@ body>header form{
   margin: 0.3125em 0 0.625em 0;/*5,10*/
   font-size: 0.8125em;/*13*/
 }
+/* 分页 */
+  nav .pagenav{
+    width: 100%;
+  }
+  .pagenav a{
+    display: block;
+    text-align: center;
+    background: #fafafa;
+    color: #817c7c;
+    transition: color .45s,background .45s;
+    padding: 0.5em 3%;
+  }
+  .pagenav a:hover{
+    color: #fafafa;
+    background: #ea6753;
+  }
+  .prevpage{
+    float: left;
+  }
+  .nextpage{
+    float: right;
+  }
 /* 侧边栏 */
 aside ul{
   border-top: 0.1875em solid #cccccc;
@@ -515,53 +544,12 @@ footer a:hover{
   background-position: left top;
   background-size: 6.875em 6.875em;/*110*/
 }
-/* ==========================================================================
-   单独文章页面
-   ========================================================================== */
-.postpart{
-  background: #fafafa;
-  padding: 0 !important;
-  color: #717171;
-}
-.postpart a{
-  color:#2aa4c9;
-}
-#main>header{
-  padding: 1em 0 0 1em;
-  border-left: 5px solid #ea6753;
-}
-#main>header h1{
-  font-size: 200%;
-  line-height: 2em;
-  color: #2ca6cb;
-  padding-left:0.5em; 
-  width: 65%;
-  float: left;
-}
-#main>header h1 a{
-   display: block;
-   color: #2ca6cb;
-}
-#main>header p{
-  float: right;
-  width: 25%;
-  margin: 2em 2em 0 0; 
-  padding: 0 0 0.125em 0;
-  text-align: right;
-  border-bottom: 1px solid #dddddd;
-}
-article{
-  padding: 2em 2em;
-  line-height: 1.85em;
-}
-article img{
-  width: 100%;
-}
+
 
 /* ==========================================================================
    for Smartphone(iphone& some android phones)(320px)
    ========================================================================== */
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 320px),(max-width: 320px) {
   /*布局*/
   #main,#asidepart{
     float: none;
@@ -654,6 +642,10 @@ article img{
   .post a h1{
     line-height: 1.5em;
   }
+  /* 分页 */
+  .pagenav a{
+    width: 25%;
+  }
   /* 侧边栏 */
   aside{
     overflow: hidden;
@@ -703,7 +695,147 @@ article img{
     top: 6.0625em;/*97*/
     margin:0 0 0 1.5em;/*24*/
     background-size: 6.875em 6.875em;/*110*/
+  }
+  /* ==========================================================================
+   单独文章页面
+   ========================================================================== */
+  .postpart{
+    background: #fafafa;
+    padding: 0 !important;
+    color: #717171;
+    margin:1em 0 0 !important;
+  }
+  .postpart a{
+    color:#2aa4c9;
+    transition: color .35s;
+  }
+  .postpart a:hover{
+    color:#ea6753;
+  }
+  #main>header{
+    padding:0;
+    border-left: none;
+  }
+  #main>header h1{
+    line-height: 1.5em;
+    font-size: 170%;
+    padding-left:0.3em; 
+    word-wrap: break-word; 
+    word-break: normal; 
+    width: 100%;
+    float: none;
+    border-left: 0.2em solid #ea6753;
+  }
+  #main>header h1 a{
+     display: block;
+     color: #2ca6cb;
+     transition: color .35s;
   }  
+  #main>header h1 a:hover{
+     color: #ea6753;
+  }
+  #main>header p{
+    float: none;
+    width: 100%;
+    margin: 0;
+    font-size: 80%; 
+    padding: 0 0 0.125em 0;
+    text-align: right;
+    border-bottom: 1px solid #dddddd; 
+  }
+  #main>header p a,#main>header p time{
+    padding: 0 0.25em;
+  }  
+  #main>header h1,article h2,article h3,article h4{
+    color: #2ca6cb;
+  }
+  article{
+    line-height: 1.85em;
+    padding: 0.5em 0;
+  }
+  article>p,article>ul{
+    padding: 0 1em;
+  }
+  article img{
+    width: 100%;
+    border: 0.1em solid #e3e3e3;
+  }
+  article h2,article h3,article h4{
+    margin: 0.5em 0;
+    padding: 0 0 0 0.5em;
+    border-left: 0.2em solid #ea6753;
+    transition: color .35s; 
+  }
+  article h2:hover,article h3:hover,article h4:hover{
+    color: #ea6753;
+  }
+  article h2{
+    font-size: 130%;
+  }
+  article h3{
+    font-size: 115%;
+  }
+  article h4{
+    font-size: 100%;
+  }
+  article blockquote{
+    font-size: 95%;
+    line-height: 1.85em;
+    margin:0.65em 0 0.65em 4% ; 
+    padding-left:3%; 
+    border-left: .2em solid #ea6753;
+  }
+  article ul{
+    margin: 0.5em 0;
+  }
+  article ul li{
+    list-style: disc inside ;
+    padding: 0.125em 0 0 0.25em;
+  }
+  article strong{
+    font-weight: bold;
+  }
+  .pagepart{
+    padding: 0 1em;
+    margin: 1em 0;
+    overflow: hidden;
+  }
+  .pagepart a{
+    display: block;
+    float: left;
+    width: 50%;
+    background: #dbdbdb;
+    text-align: center;
+    padding:0.4em 0;
+    transition: background .45s color .45s ;
+  }
+  .pagepart a:hover{
+    color: #fafafa;
+    background: #717171;
+  }
+  .pagepart a.prev::before{
+    content: "上一篇:";
+    padding-right: 0.5em;
+  }
+  .pagepart a.next::before{
+    content: "下一篇:";
+    padding-right: 0.5em;
+  }
+  .comment{
+    width: 100%;
+  }
+  .comment>p{
+    padding-left: 0.25em;
+    color: #2ba6cb;
+    font-size: 120%;
+    line-height: 1.5em;
+    font-weight: bold;
+    border-left: .3em solid #ea6753;
+  }
+  .comment div{
+    width: 95%;
+    margin: 0 auto;
+  } 
 }
 /* ==========================================================================
    for Tablet(ipad mini) or BigPhone (768px)
@@ -758,6 +890,43 @@ article img{
     .line{
       float: left;
     }
+    #main>header h1{
+      font-size: 180%;
+      padding-left:0.5em; 
+      width: 70%;
+      float: left;
+    }
+    #main>header p{
+      float: right;
+      width: 30%;
+      margin: 0 1em 0 0;
+    }
+    article>p,article>ul{
+      padding: 0 1.5em;
+    }
+    article h2,article h3,article h4{
+      padding: 0 0 0 1em;
+    }
+    article h2{
+      font-size: 140%;
+    }
+    article h3{
+      font-size: 125%;
+    }
+    article h4{
+      font-size: 115%;
+    }
+    article blockquote{
+      margin:0.65em 0 0.65em 6% ; 
+      padding-left:2%; 
+    }
+    article ul li{
+      padding: 0.125em 0 0 0.5em;
+    } 
+    .pagenav a{
+      width: 20%;
+    }
+
   }
  /* ==========================================================================
    for Netbook or ipad retina (1024px)
@@ -826,6 +995,9 @@ article img{
       line-height: 2em;/*40*/
       margin: 0.085em 0;/*3*/
     }
+    .pagenav a{
+      width: 15%;
+    }
     /* 侧边栏 */
     .categorieslist,.tagslist,.rsspart{
       float: none;
@@ -864,6 +1036,52 @@ article img{
       right: 4em;
       position: absolute;
     }
+    .postpart{
+      margin:2em 0 0 !important;
+    }
+    #main>header{
+      padding: 1em 0 0 1em;
+      border-left: 0.35em solid #ea6753;
+    }
+    #main>header h1{
+      font-size: 200%;
+      line-height: 2em;
+      padding-left:0.5em; 
+      width: 60%;
+      border: none;
+    }
+    #main>header p{
+      width: 30%;
+      margin: 3.5em 2em 0 0; 
+    }
+    article{
+      padding: 0.5em 0;
+    }
+    article>p,article>ul{
+      padding: 0 2em;
+    }
+    article h2,article h3,article h4{
+      padding: 0 0 0 1.25em;
+    }
+    article h2{
+      font-size: 160%;
+    }
+    article h3{
+      font-size: 135%;
+    }
+    article h4{
+      font-size: 125%;
+    }
+    article blockquote{
+      margin:0.65em 0 0.65em 7% ; 
+      padding-left:2%; 
+    }
+    article ul{
+      margin: 0.5em 0;
+    }
+    article ul li{
+      padding: 0.125em 0 0 1em;
+    }
   }
    /* ==========================================================================
    for Desktop (1560px)
@@ -880,10 +1098,15 @@ article img{
     #container{
       width: 82%;
     }
+    .pagenav a{
+      width: 12%;
+    }
     body>header>div{
       width: 82%;
     }
     #footer{
       width: 82%;
     }
+    
+    
 }
