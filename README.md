@@ -36,8 +36,6 @@ rss: RSS地址，如果你安装了RSS插件直接填写 http://你的网站/ato
 * logo使用的是SVG文件，头像是内嵌到CSS中的Data URI scheme。
 * `languages`文件夹中是国际化文件，只提供了简体中文和英文。
 * about.ejs是一个自定义页面示例，请把对应的`index.md`文件放到网站更目录下的`source`>'about'中，并在index.md`文件头部定义`layout`
-	
-	---
+
 	layout: about
 	title: "关于"
-	---
