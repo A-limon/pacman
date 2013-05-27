@@ -13,33 +13,33 @@ pacman是为hexo设计的一款主题。
 
 主题配置文件位于主题根目录下的`_config.yml`文件中。
 
-menu: 对应博客的菜单项
+	menu: 对应博客的菜单项
 
-widgets: 默认开启三个右侧部件
+	widgets: 默认开启三个右侧部件
 
-excerpt_link: 用于分隔文章`<!--more-->`
+	excerpt_link: 用于分隔文章`<!--more-->`
 
-google_analytics: 填写Google Analytics 的账户ID
+	google_analytics: 填写Google Analytics 的账户ID
 
-duoshuo: 多说账户ID
+	duoshuo: 多说账户ID
 
-google_plus: Google Plus账户ID
+	google_plus: Google Plus账户ID
 
-weibo_url: 新浪微博的完整URL 如：http://weibo.com/436062867
+	weibo_url: 新浪微博的完整URL 如：http://weibo.com/436062867
 
-twitter_url: Twitter的完整URL 如：https://twitter.com/yangjiansky
+	twitter_url: Twitter的完整URL 如：https://twitter.com/yangjiansky
 
-github_url: Github账户的完整URL 如：https://github.com/A-limon
+	github_url: Github账户的完整URL 如：https://github.com/A-limon
 
-facebook_url: Facebook的完整URL 如：https://www.facebook.com/yangjian
+	facebook_url: Facebook的完整URL 如：https://www.facebook.com/yangjian
 
-jiathis: 加网代码
+	jiathis: 加网代码
 
 	enable: true 是否开启
 	id: 1501277 加网账户ID
 	tsina: 1664838973 新浪微博账户ID，可以进入自己的微博查看
   
-rss: RSS地址，如果你安装了RSS插件直接填写 http://你的网站/atom.xml 即可。或者是填写你的自定义RSS地址
+	rss: RSS地址，如果你安装了RSS插件直接填写 http://你的网站/atom.xml 即可。或者是填写你的自定义RSS地址
 
 ##说明
 * HTML5+CSS3+jQuery2.0.1 响应式设计，大小屏幕通吃。
