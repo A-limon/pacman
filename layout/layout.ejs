@@ -1,0 +1,45 @@
+<% if(page.layout=='page'){ %>
+<% if(page.source.match(/\.md$/)){ %>
+<%- partial('_partial/head') %>
+<body>
+  <header>
+    <%- partial('_partial/header') %>
+  </header>
+  <div id="container">
+    <%- body %>
+    <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏">
+        <i class="icon-menu"></i>
+      </a></div>
+    <div id="asidepart">
+    <div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"><i class="icon-menu"></i></a></div>
+    <aside><%- partial('_partial/sidebar') %></aside>
+    </div>
+  </div>
+  <footer><%- partial('_partial/footer') %></footer>
+  <%- partial('_partial/after_footer') %>
+</body>
+</html>
+<% }else{ %>
+    <%- page.content %>
+<% } %>
+<% }else{ %>
+<%- partial('_partial/head') %>
+<body>
+  <header>
+    <%- partial('_partial/header') %>
+  </header>
+  <div id="container">
+    <%- body %>
+    <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏">
+        <i class="icon-menu"></i>
+      </a></div>
+    <div id="asidepart">
+    <div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"><i class="icon-menu"></i></a></div>
+    <aside><%- partial('_partial/sidebar') %></aside>
+    </div>
+  </div>
+  <footer><%- partial('_partial/footer') %></footer>
+  <%- partial('_partial/after_footer') %>
+</body>
+</html> 
+<% } %>

@@ -1,0 +1,31 @@
+menu:
+  博客: /
+  存档: /archives
+  关于: /about
+  实验室: /lab
+  简历: /resume
+
+widgets: 
+- category
+- tag
+- rss
+
+excerpt_link: Read More
+
+google_analytics: UA-1766729-8
+
+duoshuo: yangjian
+
+google_plus: 116338260303228776998
+
+weibo_url: http://weibo.com/436062867
+twitter_url: https://twitter.com/yangjiansky
+github_url: https://github.com/A-limon
+facebook_url: https://www.facebook.com/yangjian
+
+jiathis:
+  enable: true
+  id: 1501277
+  tsina: 1664838973
+  
+rss: http://www.yangjian.me/atom.xml

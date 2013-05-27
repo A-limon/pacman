@@ -1,0 +1,21 @@
+<%
+var title = '';
+if (page.category) title = page.category;
+if (page.tag) title = page.tag;
+if (page.archive){
+  if (page.year) title = page.year + (page.month ? '/' + page.month : '');
+  else title = __('archive_a');
+}
+%>
+
+<div id="main" class="postpart archivepart">
+  <h2><%= title %></h2>
+   <% page.posts.each(function(item){ %>
+      <section class="<%= item.layout %>">
+        <a href="<%- config.root %><%- item.path %>" title="<%= item.title %>">
+        <h1><%= item.title %></h1>
+        <time datetime="<%= item.date.toDate().toISOString() %>"><%= item.date.format(config.date_format) %></time>
+        </a>
+      </section>
+  <% }); %>
+</div>

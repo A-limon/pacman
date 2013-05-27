@@ -1,0 +1,7 @@
+<section class="<%= item.layout %>">
+  <a href="<%- config.root %><%- item.path %>" title="<%= item.title %>">
+      <h1><%= item.title %></h1>
+      <p><%- item.description %></p>
+      <time datetime="<%= item.date.toDate().toISOString() %>"><%= item.date.format(config.date_format) %></time>
+      </a>
+</section>

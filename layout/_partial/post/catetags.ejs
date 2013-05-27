@@ -1,0 +1,17 @@
+
+<% if (item.categories && item.categories.length && item.tags && item.tags.length){ %>
+<%
+  	var cats = [];
+    item.categories.forEach(function(cat){
+    	cats.push('<a href="' + config.root + cat.path + '">' + cat.name + '</a>');
+  	});
+  	var tags = [];
+  	item.tags.forEach(function(tag){
+    	tags.push('<a href="' + config.root + tag.path + '">' + tag.name + '</a>');
+  	});
+%>
+<div class="articletags">
+	<i class="icon-tag"></i>Tags: <%- tags.join('') %>
+	<i class="icon-folder"></i>categories:  <%- cats.join('') %>
+</div>
+<% } %>

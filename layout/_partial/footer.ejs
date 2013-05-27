@@ -1,0 +1,32 @@
+<div id="footer" >
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	<section class="info">
+		<p>Hi,I'm YangJian.For now I'm a student at collage.<br/>
+		Web development is my interest which I'd like to share with you at this blog.<br/>
+		</p>
+	</section>
+	<div class="social-font">
+		<% if(theme.weibo_url){ %>
+		<a href="<%= theme.weibo_url %>" target="_blank" title="新浪微博"><i class="icon-sina-weibo"></i></a>
+		<% } %>
+		<% if(theme.twitter_url){ %>
+		<a href="<%=theme.twitter_url %>" target="_blank" title="twitter"><i class="icon-twitter"></i></a>
+		<% } %>
+		<% if(theme.github_url){ %>
+		<a href="<%=theme.github_url %>" target="_blank" title="github"><i class="icon-github"></i></a>
+		<% } %>
+		<% if(theme.facebook_url){ %>
+		<a href="<%=theme.facebook_url %>" target="_blank" title="facebook"><i class="icon-facebook-squared"></i></a>
+		<% } %>
+	</div>
+	<p class="copyright">Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © <%= new Date().getFullYear() %> 
+	<% if (config.author) { %>
+	<a href="<%= config.url %>" title="<%= config.author %>"><%= config.author %></a>
+	<% } else {%>
+	<a href="<%= config.url %>" title="<%= config.title %>"><%= config.title %></a>
+	<% } %>
+	</p>
+</div>
