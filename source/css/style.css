@@ -451,9 +451,6 @@ aside ul{
   color: #2ba6cb;
   padding: 0 0 0.3125em 0;/*5*/
 }
-div .tagslist ul li:nth-child(1),div .tagslist ul li:nth-child(2){
-  margin-top: 0.3125em;
-}
 div .tagslist ul li{
   float: left;
 }
@@ -461,7 +458,7 @@ div .tagslist ul li a{
   color: #a4a2a3;
   display: block;
   float: left;
-  margin: 0.3125em 0.625em;
+  margin: 0.3125em 0.3125em;
   padding: 0.125em 0.3125em;
   background: #dbdbdb;
 }
@@ -717,9 +714,6 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
   .asidetitle{
     padding: 0.5em 0;
   }
-  div .tagslist ul li:nth-child(1),div .tagslist ul li:nth-child(2){
-    margin-top: 0;
-  } 
   /* 底部 */
   footer{
     margin-top: 1em;
@@ -1157,9 +1151,7 @@ li.L1,li.L3,li.L5,li.L7,li.L9 { }
     .asidetitle{
       padding: 0 0 0.3125em 0;/*5*/
     }
-    div .tagslist ul li:nth-child(1),div .tagslist ul li:nth-child(2),div .tagslist ul li:nth-child(3){
-      margin-top: 0.3125em;
-    }
+
     div .tagslist ul li{
       float: left;
     }
