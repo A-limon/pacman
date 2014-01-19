@@ -1,0 +1,35 @@
+<div id="footer" >
+	<% if(theme.author_img){ %>
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	<% } %>
+	<% if(theme.author.intro_line1&&theme.author.intro_line2){ %>
+	<section class="info">
+		<p> <%= theme.author.intro_line1 %> <br/>
+			<%= theme.author.intro_line2 %></p>
+	</section>
+	 <% } %>
+	<div class="social-font" class="clearfix">
+		<% if(theme.author.weibo){ %>
+		<a href="http://weibo.com/<%= theme.author.weibo %>" target="_blank" title="weibo"></a>
+		<% } %>
+		<% if(theme.author.twitter){ %>
+		<a href="https://twitter.com/<%=theme.author.twitter %>" target="_blank" title="twitter"></a>
+		<% } %>
+		<% if(theme.author.github){ %>
+		<a href="https://github.com/<%=theme.author.github %>" target="_blank" title="github"></a>
+		<% } %>
+		<% if(theme.author.facebook){ %>
+		<a href="https://www.facebook.com/<%=theme.author.facebook %>" target="_blank" title="facebook"></a>
+		<% } %>
+	</div>
+		<p class="copyright">Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © <%= new Date().getFullYear() %> 
+		<% if (config.author) { %>
+		<a href="<%= config.url %>" target="_blank" title="<%= config.author %>"><%= config.author %></a>
+		<% } else {%>
+		<a href="<%= config.url %>" title="<%= config.title %>"><%= config.title %></a>
+		<% } %>
+		</p>
+</div>

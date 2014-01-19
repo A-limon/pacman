@@ -1,0 +1,21 @@
+<% if (theme.jiathis.enable){ %>
+<div class="jiathis_style">
+    <span class="jiathis_txt">分享到：</span>
+    <a class="jiathis_button_tsina">新浪微博</a>
+    <a class="jiathis_button_weixin">微信</a>
+    <a class="jiathis_button_twitter">Twitter</a>
+    <a class="jiathis_button_evernote">EverNote</a>
+    <a href="http://www.jiathis.com/share?uid=1501277" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
+</div>
+<script type="text/javascript" >
+    var jiathis_config={
+    data_track_clickback:true,
+    sm:"copy,renren,cqq",
+    pic:"<%- item.photos %>",
+    summary:"",
+    <% if (theme.jiathis.tsina){ %> ralateuid:{"tsina":"<%= theme.jiathis.tsina %>"},hideMore:false}
+    <% } %>
+  </script> 
+<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=
+<% if (theme.jiathis.id){ %><%= theme.jiathis.id %><% } %>" charset="utf-8"></script>      
+<% } %>
