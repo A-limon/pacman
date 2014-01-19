@@ -1,0 +1,505 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>Tag Plugins | Pacman Theme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="YangJian">
+    
+    <meta name="description" itemprop="description" content="his post is used for testing tag plugins. See docs for more info.">
+    
+    
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="yangjiansky" />
+    <meta name="twitter:title" content="Tag Plugins | Pacman Theme" />
+      
+        <meta name="twitter:description" content="his post is used for testing tag plugins. See docs for more info." />
+      
+    
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/pacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/pacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.svg" alt="Pacman Theme" title="Pacman Theme"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Pacman Theme">Pacman Theme</a></h1>
+				<h2 class="blog-motto">Test site for hexo theme</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">主页</a></li>
+					
+						<li><a href="/archives">存档</a></li>
+					
+						<li><a href="/tags">标签</a></li>
+					
+						<li><a href="/categories">分类</a></li>
+					
+						<li><a href="/page">Page</a></li>
+					
+					<li><form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="hidden" name="q" value="site:A-limon.github.io/pacman">
+					</form></li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/tag/tag-plugins/" title="Tag Plugins" itemprop="url">Tag Plugins</a>
+  </h1>
+  <p class="article-author">By
+    
+      <a href="https://plus.google.com/116338260303228776998?rel=author" title="YangJian" target="_blank" itemprop="author">YangJian</a>
+    </p>
+  <p class="article-time">
+    <time datetime="2013-12-24T16:14:39.000Z" itemprop="datePublished">2013年12月25日</time>
+    更新日期:<time datetime="2014-01-18T10:35:58.000Z" itemprop="dateModified">2014年1月18日</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#block-quote"><span class="toc-number">1.</span> <span class="toc-text">Block Quote</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#normal-blockquote"><span class="toc-number">1.1.</span> <span class="toc-text">Normal blockquote</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#quote-from-a-book"><span class="toc-number">1.2.</span> <span class="toc-text">Quote from a book</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#quote-from-twitter"><span class="toc-number">1.3.</span> <span class="toc-text">Quote from Twitter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#quote-from-an-article-on-the-web"><span class="toc-number">1.4.</span> <span class="toc-text">Quote from an article on the web</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#code-block"><span class="toc-number">2.</span> <span class="toc-text">Code Block</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#normal-code-block"><span class="toc-number">2.1.</span> <span class="toc-text">Normal code block</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#with-caption"><span class="toc-number">2.2.</span> <span class="toc-text">With caption</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#with-caption-and-url"><span class="toc-number">2.3.</span> <span class="toc-text">With caption and URL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gist"><span class="toc-number">2.4.</span> <span class="toc-text">Gist</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jsfiddle"><span class="toc-number">2.5.</span> <span class="toc-text">jsFiddle</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#pullquote"><span class="toc-number">3.</span> <span class="toc-text">Pullquote</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#left"><span class="toc-number">3.1.</span> <span class="toc-text">Left</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#right"><span class="toc-number">3.2.</span> <span class="toc-text">Right</span></a></li></ol>
+		</div>
+		
+		<p>This post is used for testing tag plugins. See <a href="http://zespia.tw/hexo/docs/tag-plugins.html" target="_blank">docs</a> for more info.</p>
+<h2 id="block-quote">Block Quote</h2>
+<h3 id="normal-blockquote">Normal blockquote</h3>
+<blockquote>
+<p>Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.</p>
+</blockquote>
+<h3 id="quote-from-a-book">Quote from a book</h3>
+<blockquote><p>Do not just seek happiness for yourself. Seek happiness for all. Through kindness. Through mercy.</p>
+<footer><strong>David Levithan</strong><cite>Wide Awake</cite></footer></blockquote>
+
+
+<h3 id="quote-from-twitter">Quote from Twitter</h3>
+<blockquote><p>NEW: DevDocs now comes with syntax highlighting. <a href="http://devdocs.io" target="_blank">http://devdocs.io</a></p>
+<footer><strong>@DevDocs</strong><cite><a href="https://twitter.com/devdocs/status/356095192085962752" target="_blank">twitter.com/devdocs/status/&hellip;</a></cite></footer></blockquote>
+
+
+<h3 id="quote-from-an-article-on-the-web">Quote from an article on the web</h3>
+<blockquote><p>Every interaction is both precious and an opportunity to delight.</p>
+<footer><strong>Seth Godin</strong><cite><a href="http://sethgodin.typepad.com/seths_blog/2009/07/welcome-to-island-marketing.html" target="_blank">Welcome to Island Marketing</a></cite></footer></blockquote>
+
+
+<h2 id="code-block">Code Block</h2>
+<h3 id="normal-code-block">Normal code block</h3>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre>$(document).ready(<span class="function"><span class="keyword">function</span><span class="params">()</span>{</span> 
+  $(<span class="string">'.navbar'</span>).click(<span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
+    $(<span class="string">'header nav'</span>).toggleClass(<span class="string">'shownav'</span>);
+  });
+  <span class="keyword">var</span> myWidth = <span class="number">0</span>;
+});
+</pre></td></tr></table></figure>
+
+<h3 id="with-caption">With caption</h3>
+<figure class="highlight"><figcaption><span>Array.map</span></figcaption><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="keyword">array</span>.<span class="keyword">map</span>(callback[, thisArg])
+</pre></td></tr></table></figure>
+
+
+<h3 id="with-caption-and-url">With caption and URL</h3>
+<figure class="highlight"><figcaption><span>.compact</span><a href="http://underscorejs.org/#compact" target="_blank">Underscore.js</a></figcaption><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre>.compact([<span class="number">0</span>, <span class="number">1</span>, <span class="keyword">false</span>, <span class="number">2</span>, ‘’, <span class="number">3</span>]);
+=&gt; [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>]
+</pre></td></tr></table></figure>
+
+
+<h3 id="gist">Gist</h3>
+<script src="https://gist.github.com/996818.js"></script>
+
+
+<h3 id="jsfiddle">jsFiddle</h3>
+<iframe width="100%" height="300" src="http://jsfiddle.net/ccWP7/embedded/js,resources,html,css,result/light" frameborder="0" allowfullscreen></iframe>
+
+
+<h2 id="pullquote">Pullquote</h2>
+<h3 id="left">Left</h3>
+<blockquote class="pullquote left"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</blockquote>
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tempus molestie arcu, et fringilla mauris placerat ac. Nullam luctus bibendum risus. Ut cursus sed ipsum feugiat egestas. Suspendisse elementum, velit eu consequat consequat, augue lorem dapibus libero, eget pulvinar dolor est sit amet nulla. Suspendisse a porta tortor, et posuere mi. Pellentesque ultricies, mi quis volutpat malesuada, erat felis vulputate nisl, ac congue ante tortor ut ante. Proin aliquam sem vel mauris tincidunt, eget scelerisque tortor euismod. Nulla tincidunt enim nec commodo dictum. Mauris id sapien et orci gravida luctus id ut dui. In vel vulputate odio. Duis vel turpis molestie, scelerisque enim eu, lobortis eros. Cras at ipsum gravida, sagittis ante vel, viverra tellus. Nunc mauris turpis, elementum ullamcorper nisl pretium, ultrices cursus justo. Mauris porttitor commodo eros, ac ornare orci interdum in. Cras fermentum cursus leo sed mattis. In dignissim lorem sem, sit amet elementum mauris venenatis ac.</p>
+<h3 id="right">Right</h3>
+<blockquote class="pullquote right"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</blockquote>
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ligula justo, lobortis sit amet semper vel, dignissim sit amet libero. Praesent ac tempus ligula. Maecenas at gravida odio. Etiam tristique volutpat lacus eu faucibus. Donec non tempus arcu. Phasellus adipiscing, mauris nec mollis egestas, ipsum nunc auctor velit, et rhoncus lorem ipsum at ante. Praesent et sem in velit volutpat auctor. Duis vel mauris nulla. Maecenas mattis interdum ante, quis sagittis nibh cursus et. Nulla facilisi. Morbi convallis gravida tortor, ut fermentum enim gravida et. Nunc vel dictum nisl, non ultrices libero. Proin vestibulum felis eget orci consectetur lobortis. Vestibulum augue nulla, iaculis vitae augue vehicula, dignissim ultrices libero. Sed imperdiet urna et quam ultrices tincidunt nec ac magna. Etiam vel pharetra elit.</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/tag/">tag</a>
+  </div>
+
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/tag/">tag</a>
+</div>
+
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://A-limon.github.io/pacman/tag/tag-plugins/" data-title="Tag Plugins | Pacman Theme" data-tsina="1664838973" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/photo/gallery-post/" title="Gallery Post">
+  <strong>PREVIOUS:</strong><br/>
+  <span>
+  Gallery Post</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/test/link-post-without-title/"  title="www.google.com">
+ <strong>NEXT:</strong><br/> 
+ <span>www.google.com
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#block-quote"><span class="toc-number">1.</span> <span class="toc-text">Block Quote</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#normal-blockquote"><span class="toc-number">1.1.</span> <span class="toc-text">Normal blockquote</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#quote-from-a-book"><span class="toc-number">1.2.</span> <span class="toc-text">Quote from a book</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#quote-from-twitter"><span class="toc-number">1.3.</span> <span class="toc-text">Quote from Twitter</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#quote-from-an-article-on-the-web"><span class="toc-number">1.4.</span> <span class="toc-text">Quote from an article on the web</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#code-block"><span class="toc-number">2.</span> <span class="toc-text">Code Block</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#normal-code-block"><span class="toc-number">2.1.</span> <span class="toc-text">Normal code block</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#with-caption"><span class="toc-number">2.2.</span> <span class="toc-text">With caption</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#with-caption-and-url"><span class="toc-number">2.3.</span> <span class="toc-text">With caption and URL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gist"><span class="toc-number">2.4.</span> <span class="toc-text">Gist</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#jsfiddle"><span class="toc-number">2.5.</span> <span class="toc-text">jsFiddle</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#pullquote"><span class="toc-number">3.</span> <span class="toc-text">Pullquote</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#left"><span class="toc-number">3.1.</span> <span class="toc-text">Left</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#right"><span class="toc-number">3.2.</span> <span class="toc-text">Right</span></a></li></ol>
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/Foo/Bar/" title="Bar">Bar<sup>1</sup></a></li>
+		
+			<li><a href="/categories/Foo/Bar/Baz/" title="Baz">Baz<sup>1</sup></a></li>
+		
+			<li><a href="/categories/Foo/" title="Foo">Foo<sup>1</sup></a></li>
+		
+			<li><a href="/categories/Web/" title="Web">Web<sup>3</sup></a></li>
+		
+			<li><a href="/categories/hello/" title="hello">hello<sup>2</sup></a></li>
+		
+			<li><a href="/categories/photo/" title="photo">photo<sup>2</sup></a></li>
+		
+			<li><a href="/categories/tag/" title="tag">tag<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/Bar/" title="Bar">Bar<sup>1</sup></a></li>
+		
+			<li><a href="/tags/Baz/" title="Baz">Baz<sup>1</sup></a></li>
+		
+			<li><a href="/tags/Foo/" title="Foo">Foo<sup>1</sup></a></li>
+		
+			<li><a href="/tags/elements/" title="elements">elements<sup>1</sup></a></li>
+		
+			<li><a href="/tags/fancybox/" title="fancybox">fancybox<sup>2</sup></a></li>
+		
+			<li><a href="/tags/hello/" title="hello">hello<sup>1</sup></a></li>
+		
+			<li><a href="/tags/image/" title="image">image<sup>2</sup></a></li>
+		
+			<li><a href="/tags/pacman/" title="pacman">pacman<sup>1</sup></a></li>
+		
+			<li><a href="/tags/tag/" title="tag">tag<sup>2</sup></a></li>
+		
+			<li><a href="/tags/test/" title="test">test<sup>3</sup></a></li>
+		
+			<li><a href="/tags/theme/" title="theme">theme<sup>1</sup></a></li>
+		
+			<li><a href="/tags/video/" title="video">video<sup>1</sup></a></li>
+		
+			<li><a href="/tags/文章/" title="文章">文章<sup>2</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+  <div class="archiveslist">
+    <p class="asidetitle"><a href="/archives">归档</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01">一月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12">十二月 2013</a><span class="archive-list-count">15</span></li></ul>
+  </div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/Bar/" style="font-size: 10.00px;">Bar</a><a href="/tags/Baz/" style="font-size: 10.00px;">Baz</a><a href="/tags/Foo/" style="font-size: 10.00px;">Foo</a><a href="/tags/elements/" style="font-size: 10.00px;">elements</a><a href="/tags/fancybox/" style="font-size: 15.00px;">fancybox</a><a href="/tags/hello/" style="font-size: 10.00px;">hello</a><a href="/tags/image/" style="font-size: 15.00px;">image</a><a href="/tags/pacman/" style="font-size: 10.00px;">pacman</a><a href="/tags/tag/" style="font-size: 15.00px;">tag</a><a href="/tags/test/" style="font-size: 20.00px;">test</a><a href="/tags/theme/" style="font-size: 10.00px;">theme</a><a href="/tags/video/" style="font-size: 10.00px;">video</a><a href="/tags/文章/" style="font-size: 15.00px;">文章</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+      <li><a href="http://yangjian.me" target="_blank" title="YangJian">Alimon's Blog</a></li>
+      <li><a href="http://zespia.tw/hexo" target="_blank" title="Hexo">Hexo</a></li>
+      <li><a href="http://se77en.cc/" target="_blank" title="Damon Zhao">se77en's blog</a></li>
+    </ul>
+</div>
+
+  <div class="rsspart">
+	<a href="null" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hi,I&#39;m the designer of this theme. <br/>
+			I hope you can enjoy the Pacman theme for Hexo!</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/436062867" target="_blank" title="weibo"></a>
+		
+		
+		<a href="https://twitter.com/yangjiansky" target="_blank" title="twitter"></a>
+		
+		
+		<a href="https://github.com/A-limon" target="_blank" title="github"></a>
+		
+		
+		<a href="https://www.facebook.com/yangjian" target="_blank" title="facebook"></a>
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2014 
+		
+		<a href="http://A-limon.github.io/pacman" target="_blank" title="YangJian">YangJian</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"alimon"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+  </body>
+</html>

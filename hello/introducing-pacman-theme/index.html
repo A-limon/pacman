@@ -1,0 +1,611 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>Pacman主题介绍 | Pacman Theme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="YangJian">
+    
+    <meta name="description" itemprop="description" content="Pacman是一款为Hexo打造的一款扁平化，有着响应式设计的主题。本站正是为该主题设计的演示站点，同时你也可以访问我的博客查看效果。主题源码托管在Github上，欢迎Fork。遇到任何问题或意见请发表issue。">
+    
+    
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="yangjiansky" />
+    <meta name="twitter:title" content="Pacman主题介绍 | Pacman Theme" />
+      
+        <meta name="twitter:description" content="Pacman是一款为Hexo打造的一款扁平化，有着响应式设计的主题。本站正是为该主题设计的演示站点，同时你也可以访问我的博客查看效果。主题源码托管在Github上，欢迎Fork。遇到任何问题或意见请发表issue。" />
+      
+    
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/pacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/pacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+
+  <body>
+    <header>
+      <div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.svg" alt="Pacman Theme" title="Pacman Theme"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Pacman Theme">Pacman Theme</a></h1>
+				<h2 class="blog-motto">Test site for hexo theme</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">主页</a></li>
+					
+						<li><a href="/archives">存档</a></li>
+					
+						<li><a href="/tags">标签</a></li>
+					
+						<li><a href="/categories">分类</a></li>
+					
+						<li><a href="/page">Page</a></li>
+					
+					<li><form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="hidden" name="q" value="site:A-limon.github.io/pacman">
+					</form></li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/hello/introducing-pacman-theme/" title="Pacman主题介绍" itemprop="url">Pacman主题介绍</a>
+  </h1>
+  <p class="article-author">By
+    
+      <a href="https://plus.google.com/116338260303228776998?rel=author" title="YangJian" target="_blank" itemprop="author">YangJian</a>
+    </p>
+  <p class="article-time">
+    <time datetime="2014-01-08T14:25:03.000Z" itemprop="datePublished">2014年1月8日</time>
+    更新日期:<time datetime="2014-01-19T03:30:16.000Z" itemprop="dateModified">2014年1月19日</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#-"><span class="toc-number">1.</span> <span class="toc-text">主题概括</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-"><span class="toc-number">2.</span> <span class="toc-text">安装指南</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#-"><span class="toc-number">2.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#-"><span class="toc-number">2.2.</span> <span class="toc-text">启用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#-"><span class="toc-number">2.3.</span> <span class="toc-text">更新</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#-"><span class="toc-number">3.</span> <span class="toc-text">配置指南</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#-"><span class="toc-number">3.1.</span> <span class="toc-text">属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#-"><span class="toc-number">3.2.</span> <span class="toc-text">说明</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#q-a"><span class="toc-number">4.</span> <span class="toc-text">Q&amp;A</span></a></li></ol>
+		</div>
+		
+		<h2 id="-">主题概括</h2>
+<p>Pacman是一款为<a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>打造的一款扁平化，有着响应式设计的主题。本站正是为该主题设计的演示站点，同时你也可以访问<a href="http://yangjian.me" target="_blank">我的博客</a>查看效果。主题源码托管在<a href="https://github.com/A-limon/pacman" target="_blank">Github</a>上，欢迎Fork。遇到任何问题或意见请发表<a href="https://github.com/A-limon/pacman/issues" target="_blank">issue</a>。</p>
+<h2 id="-">安装指南</h2>
+<h3 id="-">安装</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre><span class="variable">$ </span>git clone <span class="symbol">https:</span>/<span class="regexp">/github.com/</span><span class="constant">A</span>-limon/pacman.git themes/pacman
+</pre></td></tr></table></figure>
+
+<p><strong>Pacman需要安装Hexo 2.4.5 或以上版本</strong> 请先升级您的Hexo程序，再启用此主题。</p>
+<h3 id="-">启用</h3>
+<p>修改你的博客根目录下的<code>config.yml</code>配置文件中的<code>theme</code>属性，将其设置为<code>pacman</code>。</p>
+<h3 id="-">更新</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre><span class="built_in">cd</span> themes/pacman
+git pull
+</pre></td></tr></table></figure>
+
+<p><strong>请先备份你的<code>_config.yml</code> 文件后再升级</strong></p>
+<h2 id="-">配置指南</h2>
+<p>Pacman主题提供了丰富的配置属性，配置文件<code>_config.yml</code>位于主题根目录下。配置文件中已经包含了详细的英文注释，所以下面就用中文进行说明。</p>
+<h3 id="-">属性</h3>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+</pre></td><td class="code"><pre><span class="preprocessor">##### Menu</span>
+menu:
+  Home: /
+  Archives: /archives 
+
+<span class="preprocessor">#### Widgets</span>
+widgets: 
+- category
+- tag
+- rss
+
+<span class="preprocessor">#### RSS</span>
+rss: 
+
+<span class="preprocessor">#### Image</span>
+imglogo:
+  enable: <span class="literal">true</span>
+  src: /img/logo.svg 
+  favicon: /img/favicon.ico 
+  apple_icon: /img/pacman.jpg
+
+<span class="preprocessor">#### Author Avatar Picture</span>
+dataURI: <span class="literal">false</span>
+author_img_data: 
+author_img: /img/author.jpg
+
+<span class="preprocessor">#### Font</span>
+ShowCustomFont: <span class="literal">true</span>  
+
+<span class="preprocessor">#### Toc</span>
+toc:
+  article: <span class="literal">true</span> 
+  aside: <span class="literal">true</span> 
+
+<span class="preprocessor">#### Fancybox</span>
+fancybox: <span class="literal">true</span> 
+
+<span class="preprocessor">#### Author information</span>
+author:
+  google_plus: 
+  intro_line1: 
+  intro_line2: 
+  weibo: 
+  twitter: 
+  github: 
+  facebook: 
+  tsina: 
+  
+<span class="preprocessor">#### Comment</span>
+duoshuo: 
+  enable: <span class="literal">true</span>        
+  short_name: 
+
+<span class="preprocessor">#### Share button</span>
+jiathis:
+  enable: <span class="literal">false</span>  
+  id: 
+  tsina:
+
+<span class="preprocessor">#### Analytics</span>
+google_analytics:
+  enable: <span class="literal">false</span>
+  id:
+  site:
+</pre></td></tr></table></figure>
+
+<h3 id="-">说明</h3>
+<ul>
+<li><p>menu 默认没有启用 <code>/tags</code> 和 <code>/categories</code> 页面，如果需要启用请在博客目录下的<code>source</code>文件夹中分别建立<code>tags</code> 和 <code>categories</code>文件夹每个文件夹中分别包含一个<code>index.md</code>文件。内容为：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre>1
+2
+3
+</pre></td><td class="code"><pre>layout: tags (或categories)
+<span class="header">title: tags (或categories)
+---</span>
+</pre></td></tr></table></figure>
+
+<p>因为主题中已经内置了这两个页面的模板，所以他们会被正确的解析出来。</p>
+</li>
+<li>widgets:  提供了6种小工具。</li>
+<li>rss:  请填写你博客的RSS地址。</li>
+<li>imglogo:  建议启用图片logo，格式建议为<code>.svg</code>或<code>.png</code>格式。同时建议提供配套的favicon以及在苹果设备上的图标（背景不要透明）。</li>
+<li>dataURI:  主题支持底部的作者头像使用dataURI格式，在下面的<code>author_img_data</code>后填上值，确保它是<strong>一行而且被引号包住</strong>如果还是想用传统的<code>jpg</code>格式那么就把图片路径放在<code>author_img</code>后，同时把<code>dataURI</code>设置成<code>false</code>。</li>
+<li>ShowCustomFont:  启用自定义字体，如果你有一定前端基础可以修改<code>font.styl</code>替换为你喜欢的字体。</li>
+<li>toc:  是否启用在文章中或侧边栏中的目录功能。二者可以都为<code>true</code>或都为<code>false</code>。同时，如果你希望在特定的某一篇文章中关闭目录功能你可以在文章文件开头中的<code>front-matter</code>中加上一行<code>toc: false</code>。</li>
+<li>fancybox:  默认关闭，如果你使用Hexo经常发表Gallery类型的文章，那么请设置为<code>true</code>（同时需要复制<code>fancybox.js</code>到你的博客目录下<code>scripts</code>文件夹中）。ps: 我很佩服用Hexo发表相册的文艺青年。</li>
+<li>author:  作者信息，建议尽量填写完整。其中<code>tsina</code>是你的新浪微博ID，不同于用户名或微博主页地址。启用这个属性后，其他用户在微博上分享你文章的同时会自动@你。</li>
+<li>duoshuo:  <a href="http://duoshuo.com" target="_blank">多说</a>评论系统。在大陆地区更好用的评论系统，如果你想更换为disqus请参考默认主题后自行修改。</li>
+<li>jiathis:  <a href="http://www.jiathis.com/" target="_blank">加网</a>分享系统。默认关闭，因为主题已经内置了原生的分享功能。</li>
+<li>google_analytics:  Google Analytics追踪代码。请注意：<strong>*Google Analytics已经升级到了Universal Analytics。请先前往后台升级你的Google Analytics版本后再启用追踪代码 </strong> 更多信息请点击<a href="https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN" target="_blank">这里</a>了解。</li>
+</ul>
+<h2 id="q-a">Q&amp;A</h2>
+<ul>
+<li><strong>Q: 楼主我审美和你不同，我想换个颜色怎么办？</strong><br/><strong>A:</strong> 因为这次主题是使用<a href="http://learnboost.github.io/stylus/" target="_blank">Stylus</a>完全重写的，所以包括颜色在内的很多变量都可以在<code>variable.styl</code>文件中修改。</li>
+<li><strong>Q: 为毛CSS有70kb？</strong><br/><strong>A:</strong> 其中有将近20多kb左右的作者头像(DataURI格式)，还有一部分响应式代码，而且动画效果均使用CSS3而不是jQuery实现，这样流畅性可以在移动平台上得到一定程度的提升。上线前请压缩一下，也就60k左右，还可以接受。</li>
+<li><strong>Q: 友情链接怎么添加？</strong><br/><strong>A:</strong> 友情链接请到主题目录下的<code>/layout/_widget/links.ejs</code>文件中自行添加。 </li>
+<li><strong>Q: 代码高亮不给力啊老湿！</strong><br/><strong>A:</strong> 代码高亮使用Hexo内置的<a href="http://highlightjs.org" target="_blank">highlight.js</a>原来是在浏览器端渲染，这次是Hexo在生成静态页面的时候直接渲染好了。如果希望使用其他高亮插件可以关闭highlight.js后安装其他插件。</li>
+<li><strong>Q: 老子原来使用<code>&lt;--! more --&gt;</code>分割的摘要怎么在首页中就剩下140个字了？</strong><br/><strong>A:</strong> 骚年，慧眼啊！是这样的：为了提高打开首页的速度故首页不加载文章图片，只加载文章摘要。因此我强烈建议大家在写文章的时候自己总结<code>description</code>并将其放在开头的<code>front-matter</code>中。如果没有会截取<code>&lt;--! more --&gt;</code>内容前的140个字，如果你连这个都懒得写，没关系，依旧为你截取文章内容的前140个字作为摘要。</li>
+<li><strong>Q: 为什么目录跳转到指定章节不好使？</strong><br/><strong>A:</strong> 目前目录跳转仅在标题是以英文开头的文章中生效，至于什么时候支持中文，你可以等待Hexo更新或Pull Request。</li>
+</ul>
+  
+	</div>
+		<footer class="article-footer clearfix">
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/pacman/">pacman</a><a href="/tags/theme/">theme</a>
+  </div>
+
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/hello/">hello</a>
+</div>
+
+
+
+<div class="article-share" id="share">
+
+  <div data-url="http://A-limon.github.io/pacman/hello/introducing-pacman-theme/" data-title="Pacman主题介绍 | Pacman Theme" data-tsina="1664838973" class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/photo/images/"  title="Images">
+ <strong>NEXT:</strong><br/> 
+ <span>Images
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section class="comment">
+	<div class="ds-thread"></div>
+</section>
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#-"><span class="toc-number">1.</span> <span class="toc-text">主题概括</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-"><span class="toc-number">2.</span> <span class="toc-text">安装指南</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#-"><span class="toc-number">2.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#-"><span class="toc-number">2.2.</span> <span class="toc-text">启用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#-"><span class="toc-number">2.3.</span> <span class="toc-text">更新</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#-"><span class="toc-number">3.</span> <span class="toc-text">配置指南</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#-"><span class="toc-number">3.1.</span> <span class="toc-text">属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#-"><span class="toc-number">3.2.</span> <span class="toc-text">说明</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#q-a"><span class="toc-number">4.</span> <span class="toc-text">Q&amp;A</span></a></li></ol>
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/Foo/Bar/" title="Bar">Bar<sup>1</sup></a></li>
+		
+			<li><a href="/categories/Foo/Bar/Baz/" title="Baz">Baz<sup>1</sup></a></li>
+		
+			<li><a href="/categories/Foo/" title="Foo">Foo<sup>1</sup></a></li>
+		
+			<li><a href="/categories/Web/" title="Web">Web<sup>3</sup></a></li>
+		
+			<li><a href="/categories/hello/" title="hello">hello<sup>2</sup></a></li>
+		
+			<li><a href="/categories/photo/" title="photo">photo<sup>2</sup></a></li>
+		
+			<li><a href="/categories/tag/" title="tag">tag<sup>1</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">标签</p>
+		<ul class="clearfix">
+		
+			<li><a href="/tags/Bar/" title="Bar">Bar<sup>1</sup></a></li>
+		
+			<li><a href="/tags/Baz/" title="Baz">Baz<sup>1</sup></a></li>
+		
+			<li><a href="/tags/Foo/" title="Foo">Foo<sup>1</sup></a></li>
+		
+			<li><a href="/tags/elements/" title="elements">elements<sup>1</sup></a></li>
+		
+			<li><a href="/tags/fancybox/" title="fancybox">fancybox<sup>2</sup></a></li>
+		
+			<li><a href="/tags/hello/" title="hello">hello<sup>1</sup></a></li>
+		
+			<li><a href="/tags/image/" title="image">image<sup>2</sup></a></li>
+		
+			<li><a href="/tags/pacman/" title="pacman">pacman<sup>1</sup></a></li>
+		
+			<li><a href="/tags/tag/" title="tag">tag<sup>2</sup></a></li>
+		
+			<li><a href="/tags/test/" title="test">test<sup>3</sup></a></li>
+		
+			<li><a href="/tags/theme/" title="theme">theme<sup>1</sup></a></li>
+		
+			<li><a href="/tags/video/" title="video">video<sup>1</sup></a></li>
+		
+			<li><a href="/tags/文章/" title="文章">文章<sup>2</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+  <div class="archiveslist">
+    <p class="asidetitle"><a href="/archives">归档</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2014/01">一月 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2013/12">十二月 2013</a><span class="archive-list-count">15</span></li></ul>
+  </div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/Bar/" style="font-size: 10.00px;">Bar</a><a href="/tags/Baz/" style="font-size: 10.00px;">Baz</a><a href="/tags/Foo/" style="font-size: 10.00px;">Foo</a><a href="/tags/elements/" style="font-size: 10.00px;">elements</a><a href="/tags/fancybox/" style="font-size: 15.00px;">fancybox</a><a href="/tags/hello/" style="font-size: 10.00px;">hello</a><a href="/tags/image/" style="font-size: 15.00px;">image</a><a href="/tags/pacman/" style="font-size: 10.00px;">pacman</a><a href="/tags/tag/" style="font-size: 15.00px;">tag</a><a href="/tags/test/" style="font-size: 20.00px;">test</a><a href="/tags/theme/" style="font-size: 10.00px;">theme</a><a href="/tags/video/" style="font-size: 10.00px;">video</a><a href="/tags/文章/" style="font-size: 15.00px;">文章</a>
+    </div>
+  </div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+      <li><a href="http://yangjian.me" target="_blank" title="YangJian">Alimon's Blog</a></li>
+      <li><a href="http://zespia.tw/hexo" target="_blank" title="Hexo">Hexo</a></li>
+      <li><a href="http://se77en.cc/" target="_blank" title="Damon Zhao">se77en's blog</a></li>
+    </ul>
+</div>
+
+  <div class="rsspart">
+	<a href="null" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hi,I&#39;m the designer of this theme. <br/>
+			I hope you can enjoy the Pacman theme for Hexo!</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/436062867" target="_blank" title="weibo"></a>
+		
+		
+		<a href="https://twitter.com/yangjiansky" target="_blank" title="twitter"></a>
+		
+		
+		<a href="https://github.com/A-limon" target="_blank" title="github"></a>
+		
+		
+		<a href="https://www.facebook.com/yangjian" target="_blank" title="facebook"></a>
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2014 
+		
+		<a href="http://A-limon.github.io/pacman" target="_blank" title="YangJian">YangJian</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"alimon"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+  </body>
+</html>
