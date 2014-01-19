@@ -39,27 +39,31 @@ menu:
 widgets: 
 - category
 - tag
+- archive
+- tagcloud
+- links
 - rss
-## provide six widgets :category,tag,rss,archive,tagcloud,links.
+## provide six widgets:category,tag,rss,archive,tagcloud,links.
 ## modify links in `/layout/_widget/links.ejs`.
-  
+
 #### RSS
 rss: ## RSS address.
 
 #### Image
 imglogo:
   enable: true              ## display image logo true/false.
-  src: /img/logo.svg        ## '.svg' and '.png' are recommended,please put image into the theme folder '/pacman/source/img'.
-favicon: /img/favicon.ico   ## size:16px*16px,'.ico' is recommended,please put image into the theme folder '/pacman/source/img' .
-apple_icon: /img/pacman.jpg ## size:64px*64px,please put image into the theme folder '/pacman/source/img'.
+  src: img/logo.svg        ## '.svg' and '.png' are recommended,please put image into the theme folder '/pacman/source/img'.
+favicon: img/favicon.ico   ## size:16px*16px,'.ico' is recommended,please put image into the theme folder '/pacman/source/img'.     
+apple_icon: img/pacman.jpg ## size:64px*64px,please put image into the theme folder '/pacman/source/img'.
 
 #### Author Avatar Picture
-dataURI: true
+author_img_enable: true ## display author avatar picture
+dataURI: false
 ## if the picture's format is dataURI please set the value to true,otherwise set the value to false.
 ## convert an image into base 64 data URIs http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/ .
 author_img_data: ''
-##  paste the dataURI in ONE LINE and included it by ''.
-author_img: /img/author.jpg ## size:220px*220px.
+## paste the dataURI in ONE LINE and included it by ''.
+author_img: img/author.jpg ## size:220px*220px.
 ## if the picture's format is '.png' or '.jpg'  instead of dataURI,you should set the 'dataURI' value to false.
 
 #### Font
@@ -68,39 +72,38 @@ ShowCustomFont: true
 
 #### Toc
 toc:
-  article: true   ## show contents in article
-  aside: true     ## show contents in aside
+  article: true   ## show contents in article.
+  aside: true     ## show contents in aside.
 ## you can set both of the value to true of neither of them.
 ## if you don't want display contents in a specified post,you can modify `front-matter` and add `toc: false`.
 
 #### Fancybox
-fancybox: fasle 
+fancybox: false 
 ## if you use gallery post or want use fancybox please set the value to true.
 ## if you want use fancybox in ANY post please copy the file 'fancybox.js'.
 ## in theme folder '/pacman/scripts' to your hexo blog folder '../scritps'.
 
-
 #### Author information
 author:
-  google_plus: 116338260303228776998 ## eg:116338260303228776998 for https://plus.google.com/u/0/116338260303228776998
-  intro_line1: "Hi,I'm the designer of this theme." ## eg: "Hello ,I'm Larry Page in Google."
-  intro_line2: "I hope you can enjoy the Pacman theme for Hexo!" ## eg: "This is my blog,believe it or not."
-  weibo: 436062867       ## e.g. 436062867 for http://weibo.com/436062867
-  twitter: yangjiansky   ## e.g. yangjiansky for https://twitter.com/yangjiansky
-  github: A-limon        ## e.g. A-limon for https://github.com/A-limon
-  facebook: yangjian     ## e.g. yangjian for https://favebook.com/yangjian
-  tsina: 1664838973      ## e.g. 1664838973  Your weibo ID,It will be used in share button.
+  google_plus:    ## eg:116338260303228776998 for https://plus.google.com/u/0/116338260303228776998
+  intro_line1: "" ## eg: "Hello ,I'm Larry Page in Google."
+  intro_line2: "" ## eg: "This is my blog,believe it or not."
+  weibo:      ## e.g. 436062867 for http://weibo.com/436062867
+  twitter:    ## e.g. yangjiansky for https://twitter.com/yangjiansky
+  github:     ## e.g. A-limon for https://github.com/A-limon
+  facebook:   ## e.g. yangjian for https://favebook.com/yangjian
+  tsina:      ## e.g. 1664838973  Your weibo ID,It will be used in share button.
 
 #### Comment
 duoshuo: 
-  enable: true         ## duoshuo.com
-  short_name: alimon   ## duoshuo short name.
+  enable: false  ## duoshuo.com
+  short_name:    ## duoshuo short name.
 
 #### Share button
 jiathis:
   enable: false ## if you use jiathis as your share tool,the built-in share tool won't be display.
-  id: 1501277	## e.g.1501277 your jiathis ID.
-  tsina: 1664838973  ## e.g.1664838973 Your weibo id,It will be used in share button.
+  id:    ## e.g. 1501277 your jiathis ID. 
+  tsina: ## e.g. 1664838973 Your weibo id,It will be used in share button.
 
 #### Analytics
 google_analytics:
