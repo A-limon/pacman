@@ -180,6 +180,7 @@ git pull
 62
 63
 64
+65
 </pre></td><td class="code"><pre><span class="preprocessor">##### Menu</span>
 menu:
   Home: /
@@ -202,6 +203,7 @@ imglogo:
   apple_icon: /img/pacman.jpg
 
 <span class="preprocessor">#### Author Avatar Picture</span>
+author_img_enable: <span class="literal">true</span>
 dataURI: <span class="literal">false</span>
 author_img_data: 
 author_img: /img/author.jpg
@@ -230,7 +232,7 @@ author:
   
 <span class="preprocessor">#### Comment</span>
 duoshuo: 
-  enable: <span class="literal">true</span>        
+  enable: <span class="literal">false</span>        
   short_name: 
 
 <span class="preprocessor">#### Share button</span>
@@ -262,7 +264,7 @@ google_analytics:
 <li>widgets:  提供了6种小工具。</li>
 <li>rss:  请填写你博客的RSS地址。</li>
 <li>imglogo:  建议启用图片logo，格式建议为<code>.svg</code>或<code>.png</code>格式。同时建议提供配套的favicon以及在苹果设备上的图标（背景不要透明）。</li>
-<li>dataURI:  主题支持底部的作者头像使用dataURI格式，在下面的<code>author_img_data</code>后填上值，确保它是<strong>一行而且被引号包住</strong>如果还是想用传统的<code>jpg</code>格式那么就把图片路径放在<code>author_img</code>后，同时把<code>dataURI</code>设置成<code>false</code>。</li>
+<li>author_img_enable:  是否显示底部的作者头像。主题支持头像使用dataURI格式，若使用请修改<code>dataURI</code>的值为<code>true</code>并在下面的<code>author_img_data</code>后填上图片的值，确保它是<strong>一行而且被引号包住</strong>如果还是想用传统的<code>jpg</code>格式那么就把图片路径放在<code>author_img</code>后，同时把<code>dataURI</code>设置成<code>false</code>。</li>
 <li>ShowCustomFont:  启用自定义字体，如果你有一定前端基础可以修改<code>font.styl</code>替换为你喜欢的字体。</li>
 <li>toc:  是否启用在文章中或侧边栏中的目录功能。二者可以都为<code>true</code>或都为<code>false</code>。同时，如果你希望在特定的某一篇文章中关闭目录功能你可以在文章文件开头中的<code>front-matter</code>中加上一行<code>toc: false</code>。</li>
 <li>fancybox:  默认关闭，如果你使用Hexo经常发表Gallery类型的文章，那么请设置为<code>true</code>（同时需要复制<code>fancybox.js</code>到你的博客目录下<code>scripts</code>文件夹中）。ps: 我很佩服用Hexo发表相册的文艺青年。</li>
