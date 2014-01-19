@@ -1,6 +1,6 @@
 <% if (site.posts.length){ %>
   <div class="archiveslist">
-    <p class="asidetitle"><a href="/archives"><%= __('archive_a') %></a></p>
+    <p class="asidetitle"><a href="<%- config.root %>archives"><%= __('archive_a') %></a></p>
       <%- list_archives() %>
   </div>
 <% } %>

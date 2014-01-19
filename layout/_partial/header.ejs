@@ -1,7 +1,7 @@
 <div>
 		<% if	(theme.imglogo.enable&&theme.imglogo.src){ %>
 			<div id="imglogo">
-				<a href="<%- config.root %>"><img src="<%= theme.imglogo.src %>" alt="<%= config.title %>" title="<%= config.title %>"/></a>
+				<a href="<%- config.root %>"><img src="<%- config.root %><%= theme.imglogo.src %>" alt="<%= config.title %>" title="<%= config.title %>"/></a>
 			</div>
 			<% } %>
 			<div id="textlogo">

@@ -45,11 +45,11 @@
     <link rel="alternative" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
     <% } %>
     <% if (theme.favicon){ %>
-    <link rel="icon" href="<%- theme.favicon %>">
+    <link rel="icon" href="<%- config.root %><%- theme.favicon %>">
     <% } %>
     <% if (theme.apple_icon){ %>
-    <link rel="apple-touch-icon" href="<%- theme.apple_icon %>">
-    <link rel="apple-touch-icon-precomposed" href="<%- theme.apple_icon %>">
+    <link rel="apple-touch-icon" href="<%- config.root %><%- theme.apple_icon %>">
+    <link rel="apple-touch-icon-precomposed" href="<%- config.root %><%- theme.apple_icon %>">
     <% } %>
     <%- css('css/style') %>
 </head>
