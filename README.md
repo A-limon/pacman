@@ -32,16 +32,13 @@ menu:
 ## And create a `index.md` file in each of them.
 ## set `front-matter`as
 ## layout: tags (or categories)
-## title: tags ( or categories)
+## title: tags (or categories)
 ## ---
 
 #### Widgets
 widgets: 
 - category
 - tag
-- archive
-- tagcloud
-- links
 - rss
 ## provide six widgets:category,tag,rss,archive,tagcloud,links.
 ## modify links in `/layout/_widget/links.ejs`.
@@ -51,10 +48,10 @@ rss: ## RSS address.
 
 #### Image
 imglogo:
-  enable: true              ## display image logo true/false.
-  src: img/logo.svg        ## '.svg' and '.png' are recommended,please put image into the theme folder '/pacman/source/img'.
-favicon: img/favicon.ico   ## size:16px*16px,'.ico' is recommended,please put image into the theme folder '/pacman/source/img'.     
-apple_icon: img/pacman.jpg ## size:64px*64px,please put image into the theme folder '/pacman/source/img'.
+  enable: true             ## display image logo true/false.
+  src: img/logo.svg        ## `.svg` and `.png` are recommended,please put image into the theme folder `/pacman/source/img`.
+favicon: img/favicon.ico   ## size:16px*16px,`.ico` is recommended,please put image into the theme folder `/pacman/source/img`.     
+apple_icon: img/pacman.jpg ## size:64px*64px,please put image into the theme folder `/pacman/source/img`.
 
 #### Author Avatar Picture
 author_img_enable: true ## display author avatar picture
@@ -64,11 +61,11 @@ dataURI: false
 author_img_data: ''
 ## paste the dataURI in ONE LINE and included it by ''.
 author_img: img/author.jpg ## size:220px*220px.
-## if the picture's format is '.png' or '.jpg'  instead of dataURI,you should set the 'dataURI' value to false.
+## if the picture's format is `.png` or `.jpg`  instead of dataURI,you should set the `dataURI` value to false.
 
 #### Font
 ShowCustomFont: true  
-## you can change custom font in 'variable.styl' and 'font.styl' which in the theme folder '/pacman/source/css'.
+## you can change custom font in `variable.styl` and `font.styl` which in the theme folder `/pacman/source/css`.
 
 #### Toc
 toc:
@@ -80,8 +77,8 @@ toc:
 #### Fancybox
 fancybox: false 
 ## if you use gallery post or want use fancybox please set the value to true.
-## if you want use fancybox in ANY post please copy the file 'fancybox.js'.
-## in theme folder '/pacman/scripts' to your hexo blog folder '../scritps'.
+## if you want use fancybox in ANY post please copy the file `fancybox.js`.
+## in theme folder `/pacman/scripts` to your hexo blog folder `../scritps`.
 
 #### Author information
 author:
@@ -112,6 +109,7 @@ google_analytics:
   site: ## e.g. yangjian.me your google analytics site or set the value as auto.
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
+
 ```
 
 
