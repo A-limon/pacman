@@ -1903,11 +1903,11 @@ footer {
 }
 .article-content pre,
 .article-content .highlight {
-  background: #2d2d2d;
+  background: #1d1f21;
   margin: 0.5em 0;
   padding: 1em 2%;
   overflow: auto;
-  color: #ccc;
+  color: #c5c8c6;
   line-height: 1.5;
   font-size: 100%;
 }
@@ -1943,7 +1943,7 @@ footer {
   zoom: 1;
   font-size: 0.85em;
   text-align: left;
-  color: #999;
+  color: #969896;
   line-height: 1em;
   padding: 0.5em 0;
   margin-bottom: 0.5em;
@@ -1965,7 +1965,7 @@ footer {
 }
 .article-content .gist {
   margin: 0.5em 0;
-  background: #2d2d2d;
+  background: #1d1f21;
   padding: 1em 2%;
 }
 .article-content .gist .gist-file {
@@ -1991,8 +1991,8 @@ footer {
   border: none;
 }
 .article-content .gist .gist-file .gist-meta {
-  background: #2d2d2d;
-  color: #999;
+  background: #1d1f21;
+  color: #969896;
   font: 0.85em "Georgia", serif;
   text-shadow: 0 0;
   padding: 0;
@@ -2005,61 +2005,71 @@ footer {
 .article-content .gist .gist-file .gist-meta a:hover {
   color: #ea6753;
 }
-pre .comment,
-pre .title {
-  color: #999;
+pre .comment {
+  color: #969896;
 }
+pre .title,
 pre .variable,
 pre .attribute,
 pre .tag,
 pre .regexp,
 pre .ruby .constant,
-pre .xml .tag .title,
-pre .xml .pi,
-pre .xml .doctype,
-pre .html .doctype,
-pre .css .id,
-pre .css .class,
-pre .css .pseudo {
-  color: #f2777a;
+pre .tag .title,
+pre .pi,
+pre .doctype,
+pre .id,
+pre .class,
+pre .pseudo {
+  color: #c66;
 }
 pre .number,
 pre .preprocessor,
+pre .pragma,
 pre .built_in,
 pre .literal,
 pre .params,
 pre .constant {
-  color: #f99157;
+  color: #de935f;
 }
-pre .class,
-pre .ruby .class .title,
-pre .css .rules .attribute {
-  color: #9c9;
+pre .class .title,
+pre .rules .attribute {
+  color: #f0c674;
 }
 pre .string,
 pre .value,
 pre .inheritance,
 pre .header,
-pre .ruby .symbol,
-pre .xml .cdata {
-  color: #9c9;
+pre .symbol,
+pre .cdata {
+  color: #b5bd68;
 }
 pre .css .hexcolor {
-  color: #6cc;
+  color: #8abeb7;
 }
 pre .function,
-pre .python .decorator,
+pre .function .title,
+pre .decorator,
 pre .python .title,
-pre .ruby .function .title,
-pre .ruby .title .keyword,
+pre .title .keyword,
 pre .perl .sub,
 pre .javascript .title,
 pre .coffeescript .title {
-  color: #69c;
+  color: #81a2be;
 }
 pre .keyword,
 pre .javascript .function {
-  color: #c9c;
+  color: #b294bb;
+}
+pre .coffeescript .javascript,
+pre .javascript .xml,
+pre .tex .formula,
+pre .xml .javascript,
+pre .xml .vbscript,
+pre .xml .css,
+pre .xml .cdata {
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
 }
 .ds-highlight {
   color: #2ca6cb !important;
