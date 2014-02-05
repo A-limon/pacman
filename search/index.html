@@ -1,19 +1,21 @@
 
-  <!DOCTYPE HTML>
+ <!DOCTYPE HTML>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   
-    <title>Tag: elements | Pacman Theme</title>
+    <title>search | Pacman Theme</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="YangJian">
+    
+    <meta name="description" content="pacman theme is a flat and responsive design theme for hexo.">
     
     
     
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="yangjiansky" />
-    <meta name="twitter:title" content="Tag: elements | Pacman Theme" />
+    <meta name="twitter:title" content="search | Pacman Theme" />
       
     
     
@@ -69,63 +71,28 @@
       </header>
       <div id="container">
         
-
-<div class="archive-title" >
-  <h2 class="tag-icon">elements</h2>
-  
+<div  id="main" class="page">
+  <div id='cse' style='width:100%;text-align:center'>正在加载搜索结果，请稍等。</div>
 </div>
-<div id="main" class="archive-part clearfix">
-  <div id="archive-page">
+<script src="http://www.google.com.hk/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+google.load('search', '1', {language : 'zh-CN',style: google.loader.themes.MINIMALIST});
+google.setOnLoadCallback(function(){
+  var customSearchControl = new google.search.CustomSearchControl('000561263943549425496:mrzrm0gr4kg');
+  customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+  var options = new google.search.DrawOptions();
+  options.setAutoComplete(true);
+  customSearchControl.draw('cse', options);
+  var match = location.search.match(/q=([^&]*)(&|$)/);
+  if(match && match[1]){
+    var search = decodeURIComponent(match[1]); 
+    customSearchControl.execute(search);
+  }
+},true);
+</script>
 
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/pacman/hello/elements/" title="Elements" itemprop="url">
-  
-    <h1 itemprop="name">Elements</h1>
-    
-    <time datetime="2013-12-24T15:29:08.000Z" itemprop="datePublished">2013年12月24日</time>
-  </a>
-</section>
-
-
-  </div>
-</div>
 
       </div>
-      <footer><div id="footer" >
-	
-	<div class="line">
-		<span></span>
-		<div class="author"></div>
-	</div>
-	
-	
-	<section class="info">
-		<p> Hi,I&#39;m the designer of this theme. <br/>
-			I hope you can enjoy the Pacman theme for Hexo!</p>
-	</section>
-	 
-	<div class="social-font" class="clearfix">
-		
-		<a href="http://weibo.com/436062867" target="_blank" title="weibo"></a>
-		
-		
-		<a href="https://twitter.com/yangjiansky" target="_blank" title="twitter"></a>
-		
-		
-		<a href="https://github.com/A-limon" target="_blank" title="github"></a>
-		
-		
-		<a href="https://www.facebook.com/yangjian" target="_blank" title="facebook"></a>
-		
-	</div>
-		<p class="copyright">Powered by <a href="http://zespia.tw/hexo/" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2014 
-		
-		<a href="http://yangjian.me/pacman" target="_blank" title="YangJian">YangJian</a>
-		
-		</p>
-</div>
-</footer>
       <script src="/pacman/js/jquery-2.0.3.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){ 
@@ -153,8 +120,6 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
-      
-      $('#toc.toc-aside').css('display', 'none');
         
     }
   });
@@ -171,38 +136,6 @@ $(document).ready(function(){
   $(window).scroll(function(){
     o.css("top",Math.max(80,260-$(this).scrollTop()));
   });
-});
-</script>
-
-<script type="text/javascript">
-$(document).ready(function(){ 
-  var ai = $('.article-content>iframe'),
-      ae = $('.article-content>embed'),
-      t  = $('#toc'),
-      h  = $('article h2')
-      ah = $('article h2'),
-      ta = $('#toc.toc-aside'),
-      o  = $('.openaside'),
-      c  = $('.closeaside');
-  if(ai.length>0){
-    ai.wrap('<div class="video-container" />');
-  };
-  if(ae.length>0){
-   ae.wrap('<div class="video-container" />');
-  };
-  if(ah.length==0){
-    t.css('display','none');
-  }else{
-    c.click(function(){
-      ta.css('display', 'block').addClass('fadeIn');
-    });
-    o.click(function(){
-      ta.css('display', 'none');
-    });
-    $(window).scroll(function(){
-      ta.css("top",Math.max(140,320-$(this).scrollTop()));
-    });
-  };
 });
 </script>
 
