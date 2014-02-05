@@ -110,6 +110,11 @@ google_analytics:
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 
+#### Custom Search
+google_cse: 
+  enable: false
+  cx:  ## e.g. 000561263943549425496:mrzrm0gr4kg your Custom Search ID.
+## https://www.google.com/cse/
 ```
 
 

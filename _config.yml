@@ -86,6 +86,6 @@ google_analytics:
 
 #### Custom Search
 google_cse: 
-  enable: true
-  cx: 000561263943549425496:mrzrm0gr4kg ## e.g. 000561263943549425496:mrzrm0gr4kg your Custom Search ID.
+  enable: false
+  cx:  ## e.g. 000561263943549425496:mrzrm0gr4kg your Custom Search ID.
 ## https://www.google.com/cse/
