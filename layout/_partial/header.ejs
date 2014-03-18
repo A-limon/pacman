@@ -25,7 +25,7 @@
 					<% } else { %>
 					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="Search" />
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="<%= __('search') %>" />
 						<input type="hidden" name="q" value="site:<%- config.url.replace(/^https?:\/\//, '') %>">
 					</form>
 					<% } %>
