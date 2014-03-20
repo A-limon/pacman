@@ -63,13 +63,14 @@
 					
 					<form class="search" action="/pacman/search/index.html" method="get" accept-charset="utf-8">
 						<label>Search</label>
-						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="Search" />
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="搜索" />
 					</form>
 					
 					</li>
 				</ul>
 			</nav>			
 </div>
+
     </header>
     <div id="container">
       <div id="main" class="post" itemscope itemprop="blogPost">
@@ -94,21 +95,21 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#-"><span class="toc-number">1.</span> <span class="toc-text">主题概括</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-"><span class="toc-number">2.</span> <span class="toc-text">安装指南</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#-"><span class="toc-number">2.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#-"><span class="toc-number">2.2.</span> <span class="toc-text">启用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#-"><span class="toc-number">2.3.</span> <span class="toc-text">更新</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#-"><span class="toc-number">3.</span> <span class="toc-text">配置指南</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#-"><span class="toc-number">3.1.</span> <span class="toc-text">属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#-"><span class="toc-number">3.2.</span> <span class="toc-text">说明</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#q-a"><span class="toc-number">4.</span> <span class="toc-text">Q&amp;A</span></a></li></ol>
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#主题概括"><span class="toc-number">1.</span> <span class="toc-text">主题概括</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装指南"><span class="toc-number">2.</span> <span class="toc-text">安装指南</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装"><span class="toc-number">2.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#启用"><span class="toc-number">2.2.</span> <span class="toc-text">启用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#更新"><span class="toc-number">2.3.</span> <span class="toc-text">更新</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#配置指南"><span class="toc-number">3.</span> <span class="toc-text">配置指南</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#属性"><span class="toc-number">3.1.</span> <span class="toc-text">属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#说明"><span class="toc-number">3.2.</span> <span class="toc-text">说明</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Q&amp;A"><span class="toc-number">4.</span> <span class="toc-text">Q&amp;A</span></a></li></ol>
 		</div>
 		
-		<h2 id="-">主题概括</h2>
+		<h2 id="主题概括">主题概括</h2>
 <p>Pacman是一款为<a href="http://zespia.tw/hexo/" target="_blank">Hexo</a>打造的一款扁平化，有着响应式设计的主题。本站正是为该主题设计的演示站点，同时你也可以访问<a href="http://yangjian.me" target="_blank">我的博客</a>查看效果。主题源码托管在<a href="https://github.com/A-limon/pacman" target="_blank">Github</a>上，欢迎Fork。遇到任何问题或意见请发表<a href="https://github.com/A-limon/pacman/issues" target="_blank">issue</a>。</p>
-<h2 id="-">安装指南</h2>
-<h3 id="-">安装</h3>
+<h2 id="安装指南">安装指南</h2>
+<h3 id="安装">安装</h3>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 </pre></td><td class="code"><pre><span class="variable">$ </span>git clone <span class="symbol">https:</span>/<span class="regexp">/github.com/</span><span class="constant">A</span>-limon/pacman.git themes/pacman
 </pre></td></tr></table></figure>
 
 <p><strong>Pacman需要安装Hexo 2.4.5 或以上版本</strong> 请先升级您的Hexo程序，再启用此主题。</p>
-<h3 id="-">启用</h3>
-<p>修改你的博客根目录下的<code>config.yml</code>配置文件中的<code>theme</code>属性，将其设置为<code>pacman</code>。</p>
-<h3 id="-">更新</h3>
+<h3 id="启用">启用</h3>
+<p>修改你的博客根目录下的<code>config.yml</code>配置文件中的<code>theme</code>属性，将其设置为<code>pacman</code>。同时请设置<code>stylus</code>属性中的<code>compress</code>值为<code>true</code>。</p>
+<h3 id="更新">更新</h3>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
 </pre></td><td class="code"><pre><span class="built_in">cd</span> themes/pacman
@@ -116,9 +117,9 @@ git pull
 </pre></td></tr></table></figure>
 
 <p><strong>请先备份你的<code>_config.yml</code> 文件后再升级</strong></p>
-<h2 id="-">配置指南</h2>
+<h2 id="配置指南">配置指南</h2>
 <p>Pacman主题提供了丰富的配置属性，配置文件<code>_config.yml</code>位于主题根目录下。配置文件中已经包含了详细的英文注释，所以下面就用中文进行说明。</p>
-<h3 id="-">属性</h3>
+<h3 id="属性">属性</h3>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
 2
 3
@@ -261,7 +262,7 @@ google_cse:
   cx:
 </pre></td></tr></table></figure>
 
-<h3 id="-">说明</h3>
+<h3 id="说明">说明</h3>
 <ul>
 <li><p>menu 默认没有启用 <code>/tags</code> 和 <code>/categories</code> 页面，如果需要启用请在博客目录下的<code>source</code>文件夹中分别建立<code>tags</code> 和 <code>categories</code>文件夹每个文件夹中分别包含一个<code>index.md</code>文件。内容为：</p>
 <figure class="highlight"><table><tr><td class="gutter"><pre>1
@@ -295,14 +296,14 @@ google_cse:
 
 </li>
 </ul>
-<h2 id="q-a">Q&amp;A</h2>
+<h2 id="Q&amp;A">Q&amp;A</h2>
 <ul>
 <li><strong>Q: 楼主我审美和你不同，我想换个颜色怎么办？</strong><br/><strong>A:</strong> 因为这次主题是使用<a href="http://learnboost.github.io/stylus/" target="_blank">Stylus</a>完全重写的，所以包括颜色在内的很多变量都可以在<code>variable.styl</code>文件中修改。</li>
 <li><strong>Q: 为毛CSS有70kb？</strong><br/><strong>A:</strong> 其中有将近20多kb左右的作者头像(DataURI格式)，还有一部分响应式代码，而且动画效果均使用CSS3而不是jQuery实现，这样流畅性可以在移动平台上得到一定程度的提升。上线前请压缩一下，也就60k左右，还可以接受。</li>
 <li><strong>Q: 友情链接怎么添加？</strong><br/><strong>A:</strong> 友情链接请到主题目录下的<code>/layout/_widget/links.ejs</code>文件中自行添加。 </li>
 <li><strong>Q: 代码高亮不给力啊老湿！</strong><br/><strong>A:</strong> 代码高亮使用Hexo内置的<a href="http://highlightjs.org" target="_blank">highlight.js</a>原来是在浏览器端渲染，这次是Hexo在生成静态页面的时候直接渲染好了。如果希望使用其他高亮插件可以关闭highlight.js后安装其他插件。</li>
 <li><strong>Q: 老子原来使用<code>&lt;--! more --&gt;</code>分割的摘要怎么在首页中就剩下140个字了？</strong><br/><strong>A:</strong> 骚年，慧眼啊！是这样的：为了提高打开首页的速度故首页不加载文章图片，只加载文章摘要。因此我强烈建议大家在写文章的时候自己总结<code>description</code>并将其放在开头的<code>front-matter</code>中。如果没有会截取<code>&lt;--! more --&gt;</code>内容前的140个字，如果你连这个都懒得写，没关系，依旧为你截取文章内容的前140个字作为摘要。</li>
-<li><strong>Q: 为什么目录跳转到指定章节不好使？</strong><br/><strong>A:</strong> 目前目录跳转仅在标题是以英文开头的文章中生效，至于什么时候支持中文，你可以等待Hexo更新或Pull Request。</li>
+<li><strong>Q: 为什么目录跳转到指定章节不好使？</strong><br/><strong>A:</strong> <del>目前目录跳转仅在标题是以英文开头的文章中生效，至于什么时候支持中文，你可以等待Hexo更新或Pull Request。</del><br>更新：hexo 2.5.2版本已经修复了目录跳转问题。</li>
 </ul>
   
 	</div>
@@ -353,7 +354,7 @@ google_cse:
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#-"><span class="toc-number">1.</span> <span class="toc-text">主题概括</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#-"><span class="toc-number">2.</span> <span class="toc-text">安装指南</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#-"><span class="toc-number">2.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#-"><span class="toc-number">2.2.</span> <span class="toc-text">启用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#-"><span class="toc-number">2.3.</span> <span class="toc-text">更新</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#-"><span class="toc-number">3.</span> <span class="toc-text">配置指南</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#-"><span class="toc-number">3.1.</span> <span class="toc-text">属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#-"><span class="toc-number">3.2.</span> <span class="toc-text">说明</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#q-a"><span class="toc-number">4.</span> <span class="toc-text">Q&amp;A</span></a></li></ol>
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#主题概括"><span class="toc-number">1.</span> <span class="toc-text">主题概括</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装指南"><span class="toc-number">2.</span> <span class="toc-text">安装指南</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#安装"><span class="toc-number">2.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#启用"><span class="toc-number">2.2.</span> <span class="toc-text">启用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#更新"><span class="toc-number">2.3.</span> <span class="toc-text">更新</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#配置指南"><span class="toc-number">3.</span> <span class="toc-text">配置指南</span></a></li><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#属性"><span class="toc-number">3.1.</span> <span class="toc-text">属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#说明"><span class="toc-number">3.2.</span> <span class="toc-text">说明</span></a></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#Q&amp;A"><span class="toc-number">4.</span> <span class="toc-text">Q&amp;A</span></a></li></ol>
   </div>
 
 <div id="asidepart">
@@ -438,7 +439,7 @@ google_cse:
   <p class="asidetitle">友情链接</p>
     <ul>
       <li><a href="http://yangjian.me" target="_blank" title="YangJian">Alimon's Blog</a></li>
-      <li><a href="http://zespia.tw/hexo" target="_blank" title="Hexo">Hexo</a></li>
+      <li><a href="http://hexo.io" target="_blank" title="Hexo">Hexo</a></li>
       <li><a href="http://se77en.cc/" target="_blank" title="Damon Zhao">se77en's blog</a></li>
       <li><a href="http://wuchong.me/" target="_blank" title="Damon Zhao">Jark's blog</a></li>
       
