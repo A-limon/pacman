@@ -17,7 +17,7 @@
 						<li><a href="<%- theme.menu[i] %>"><%= i %></a></li>
 					<% } %>
 					<li>
-					<% if	(theme.google_cse.enable){ %>
+					<% if	(theme.google_cse&&theme.google_cse.enable){ %>
 					<form class="search" action="<%- config.root %>search/index.html" method="get" accept-charset="utf-8">
 						<label>Search</label>
 						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="<%= __('search') %>" />

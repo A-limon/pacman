@@ -87,5 +87,11 @@ google_analytics:
 #### Custom Search
 google_cse: 
   enable: false
-  cx:  ## e.g. 000561263943549425496:mrzrm0gr4kg your Custom Search ID.
-## https://www.google.com/cse/
+  cx:  ## e.g. 000561263943549425496:mrzrm0gr4kg your Custom Search ID
+## https://www.google.com/cse/ 
+## To enable the custom search You must create a "search" folder in '/source' and a "index.md" file
+## set the 'front-matter' as
+## layout: search 
+## title: search
+## ---
+
