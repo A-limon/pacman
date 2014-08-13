@@ -1,6 +1,6 @@
 # Pacman
 
-Pacman is a flat and responsive design theme for [Hexo](http://zespia.tw/hexo/).
+Pacman is a flat and responsive design theme for [Hexo](http://hexo.io).
 
 [Demo](http://A-limon.github.io/pacman) || [Alimon's Blog](http://yangjian.me)
 
