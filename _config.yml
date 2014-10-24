@@ -1,6 +1,8 @@
 ##### Menu
 menu:
   Home: /
+  About: /about
+  Algorithm: /algorithm
   Archives: /archives
 ## you can create `tags` and `categories` folders in `../source`.
 ## And create a `index.md` file in each of them.
@@ -18,14 +20,14 @@ widgets:
 ## modify links in `/layout/_widget/links.ejs`.
 
 #### RSS
-rss: ## RSS address.
+rss: /atom.xml ## RSS address.
 
 #### Image
 imglogo:
   enable: true             ## display image logo true/false.
-  src: img/logo.svg        ## `.svg` and `.png` are recommended,please put image into the theme folder `/pacman/source/img`.
+  src: img/logo.png        ## `.svg` and `.png` are recommended,please put image into the theme folder `/pacman/source/img`.
 favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended,please put image into the theme folder `/pacman/source/img`.     
-apple_icon: img/pacman.jpg ## size:114px*114px,please put image into the theme folder `/pacman/source/img`.
+apple_icon: img/qmark.jpg ## size:114px*114px,please put image into the theme folder `/pacman/source/img`.
 
 #### Author Avatar Picture
 author_img_enable: true ## display author avatar picture
@@ -56,13 +58,13 @@ fancybox: false
 
 #### Author information
 author:
-  google_plus:    ## eg:116338260303228776998 for https://plus.google.com/u/0/116338260303228776998
-  intro_line1: "" ## eg: "Hello ,I'm Larry Page in Google."
-  intro_line2: "" ## eg: "This is my blog,believe it or not."
-  weibo:      ## e.g. 436062867 for http://weibo.com/436062867
-  twitter:    ## e.g. yangjiansky for https://twitter.com/yangjiansky
-  github:     ## e.g. A-limon for https://github.com/A-limon
-  facebook:   ## e.g. yangjian for https://favebook.com/yangjian
+  google_plus: 108764880042816555752   ## eg:116338260303228776998 for https://plus.google.com/u/0/116338260303228776998
+  intro_line1: "On the road to be a good father, husband, son and web developer, specialized in JS" ## eg: "Hello ,I'm Larry Page in Google."
+  intro_line2: "Playing around with Node.js, AngularJS and anything interesting" ## eg: "This is my blog,believe it or not."
+  weibo: kenspirit     ## e.g. 436062867 for http://weibo.com/436062867
+  twitter: kenspirit   ## e.g. yangjiansky for https://twitter.com/yangjiansky
+  github: kenspirit    ## e.g. A-limon for https://github.com/A-limon
+  facebook: kenspirit  ## e.g. yangjian for https://favebook.com/yangjian
   tsina:      ## e.g. 1664838973  Your weibo ID,It will be used in share button.
   linkedin:   ## e.g. in/jeffweiner08 for https://www.linkedin.com/in/jeffweiner08
 
@@ -79,9 +81,9 @@ jiathis:
 
 #### Analytics
 google_analytics:
-  enable: false
-  id:   ## e.g. UA-1766729-8 your google analytics ID.
-  site: ## e.g. yangjian.me your google analytics site or set the value as auto.
+  enable: true
+  id: UA-37378953-1  ## e.g. UA-1766729-8 your google analytics ID.
+  site: www.thinkingincrowd.me ## e.g. yangjian.me your google analytics site or set the value as auto.
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 
