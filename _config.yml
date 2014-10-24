@@ -85,6 +85,16 @@ google_analytics:
 ## You MUST upgrade to Universal Analytics first!
 ## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
 
+#### Baidu Tongji
+baidu_tongji:
+  enable: false
+  id: ## e.g. 4eea06397c3c47ccb488640989128157 your baidu tongji id
+## http://yingxiao.baidu.com/support/tongji/detail_2525.html
+## Find id in "wap站访问分析代码" (recommended)
+## e.g. 4eea06397c3c47ccb488640989128157 in "$_hmt = new _HMT("4eea06397c3c47ccb488640989128157");"
+## Find id in "访问分析代码", note that it does NOT include "3F"
+## e.g. 4eea06397c3c47ccb488640989128157 in "hm.baidu.com/h.js%3F4eea06397c3c47ccb488640989128157"
+
 #### Custom Search
 google_cse: 
   enable: false
