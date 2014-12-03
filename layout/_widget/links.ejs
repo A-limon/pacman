@@ -1,7 +1,10 @@
+<% if (theme.links && theme.links.length) { %>
 <div class="linkslist">
   <p class="asidetitle"><%= __('links') %></p>
     <ul>
-      <li><a href="http://yangjian.me" target="_blank" title="YangJian">Alimon's Blog</a></li>
-      <li><a href="http://hexo.io" target="_blank" title="Hexo">Hexo</a></li>
+	<% theme.links.forEach(function(item) { %>
+      <li><a href="<%= item.url %>" target="_blank" title="<%= item.title %>"><%= item.name %></a></li>
+    <% }); %>
     </ul>
 </div>
+<% } %>

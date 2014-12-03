@@ -14,8 +14,10 @@ widgets:
 - category
 - tag
 - rss
-## provide six widgets:category,tag,rss,archive,tagcloud,links.
-## modify links in `/layout/_widget/links.ejs`.
+- comment
+- links
+## provide seven widgets:category,tag,rss,archive,tagcloud,links,comment.
+## modify links in `_config.yml`
 
 #### RSS
 rss: ## RSS address.
@@ -95,4 +97,13 @@ google_cse:
 ## layout: search 
 ## title: search
 ## ---
+
+## for friendly links
+links:
+- url: http://github.com
+  name: github
+  title: a free code repository
+- url: http://hexo.io
+  name: hexo
+  title: a free blog generator
 
