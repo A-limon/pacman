@@ -107,3 +107,7 @@ links:
   name: hexo
   title: a free blog generator
 
+# 百度统计
+baidu_tongji:
+    enable: false ##使用百度统计就设置为true
+    key: ##百度统计代码中//hm.baidu.com/hm.js?后面的那串id
