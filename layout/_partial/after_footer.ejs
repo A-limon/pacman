@@ -158,7 +158,28 @@ $(document).ready(function(){
   if($.fancybox){
     $('.fancybox').fancybox();
   }
-}); 
+});
 </script>
 <% } %>
+<script type="text/javascript">
+$(function() {
+    $('.article-content img').each(function() {
+        var me = $(this)
+        var alt = me.attr('alt')
+        if (alt) {
+            var link = $('<a />').attr({
+                title: alt,
+                href: me.attr('src'),
+                target: '__BLANK'
+            })
+            me.wrap(link)
+            var caption = $('<caption />').text(alt).css({
+                display: 'block',
+                textAlign: 'center'
+            })
+            me.after(caption)
+        }
+    })
+})
+</script>
 <%- partial('google_analytics') %>
