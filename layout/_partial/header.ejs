@@ -13,7 +13,7 @@
 			<nav class="animated">
 				<ul>
 					<% for (var i in theme.menu){ %>
-						<li><a href="<%- theme.menu[i] %>"><%= i %></a></li>
+						<li><a href="<%- config.root %><%- theme.menu[i] %>"><%= i %></a></li>
 					<% } %>
 					<li>
 					<% if	(theme.google_cse&&theme.google_cse.enable){ %>
