@@ -37,6 +37,10 @@ author_img_data: ''
 author_img: img/author.jpg ## size:220px*220px.
 ## if the picture's format is `.png` or `.jpg`  instead of dataURI,you should set the `dataURI` value to false.
 
+#### Writing
+  highlight:
+  enable: true
+
 #### Font
 ShowCustomFont: true  
 ## you can change custom font in `variable.styl` and `font.styl` which in the theme folder `/pacman/source/css`.
