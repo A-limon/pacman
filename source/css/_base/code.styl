@@ -1,19 +1,32 @@
 // More theme here http//softwaremaniacs.org/media/soft/highlight/test.html
 // Just change those colors
 // https//github.com/chriskempson/tomorrow-theme
-highlight-background = #1d1f21
-highlight-current-line = #282a2e
+//highlight-background = #E3EDF3
+//highlight-current-line = #282a2e
+//highlight-line-numbers = #666
+//highlight-selection = #373b41
+//highlight-foreground = #c5c8c6
+//highlight-comment = #969896
+//highlight-red = #cc6666
+//highlight-orange = #de935f
+//highlight-yellow = #f0c674
+//highlight-green = #b5bd68
+//highlight-aqua = #8abeb7
+//highlight-blue = #81a2be
+//highlight-purple = #b294bb
+highlight-background = #E3EDF3
+highlight-current-line = #efefef
 highlight-line-numbers = #666
-highlight-selection = #373b41
-highlight-foreground = #c5c8c6
-highlight-comment = #969896
-highlight-red = #cc6666
-highlight-orange = #de935f
-highlight-yellow = #f0c674
-highlight-green = #b5bd68
-highlight-aqua = #8abeb7
-highlight-blue = #81a2be
-highlight-purple = #b294bb
+highlight-selection = #d6d6d6
+highlight-foreground = #4d4d4c
+highlight-comment = #00A86B
+highlight-red = #c82829
+highlight-orange = #f5871f
+highlight-yellow = #eab700
+highlight-green = #718c00
+highlight-aqua = #3e999f
+highlight-blue = #4271ae
+highlight-purple = #8959a8
 
 $code-block
   background highlight-background
@@ -23,9 +36,15 @@ $code-block
   color highlight-foreground
   line-height line-height
   font-size font-size
+  padding: 15px article-padding
+  border-style: solid
+  border-color: color-border
+  border-width: 0px 0
+  border-radius: 5px // 加个圆角~
+  //overflow: auto
 
 $line-numbers
-  color highlight-line-numbers 
+  color highlight-line-numbers
   font-size 0.85em
   line-height line-height
   font-size font-size
