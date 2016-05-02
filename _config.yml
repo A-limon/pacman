@@ -18,7 +18,8 @@ widgets:
 ## modify links in `/layout/_widget/links.ejs`.
 
 #### RSS
-rss: ## RSS address.
+rss:  /atom.xml
+## RSS address.
 
 #### Image
 imglogo:
@@ -29,16 +30,16 @@ apple_icon: img/pacman.jpg ## size:114px*114px,please put image into the theme f
 
 #### Author Avatar Picture
 author_img_enable: true ## display author avatar picture
-dataURI: false
+dataURI: true
 ## if the picture's format is dataURI please set the value to true,otherwise set the value to false.
 ## convert an image into base 64 data URIs http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/ .
-author_img_data: ''
+author_img_data: 'http://123.206.68.197/content/images/2016/03/imcoder.png'
 ## paste the dataURI in ONE LINE and included it by ''.
 author_img: img/author.jpg ## size:220px*220px.
 ## if the picture's format is `.png` or `.jpg`  instead of dataURI,you should set the `dataURI` value to false.
 
 #### Writing
-  highlight:
+highlight:
   enable: true
 
 #### Font
@@ -61,8 +62,8 @@ fancybox: false
 #### Author information
 author:
   google_plus:    ## eg:116338260303228776998 for https://plus.google.com/u/0/116338260303228776998
-  intro_line1: "" ## eg: "Hello ,I'm Larry Page in Google."
-  intro_line2: "" ## eg: "This is my blog,believe it or not."
+  intro_line1: "hi，I'm Jony." ## eg: "Hello ,I'm Larry Page in Google."
+  intro_line2: "This is our blog, believe it or not." ## eg: "This is my blog,believe it or not."
   weibo:      ## e.g. 436062867 for http://weibo.com/436062867
   twitter:    ## e.g. yangjiansky for https://twitter.com/yangjiansky
   github:     ## e.g. A-limon for https://github.com/A-limon
