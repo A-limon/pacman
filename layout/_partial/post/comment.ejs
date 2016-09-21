@@ -1,5 +1,8 @@
-<% if (theme.duoshuo.enable && page.comments){ %>
 <section class="comment">
-	<div class="ds-thread"></div>
+	<% if (theme.duoshuo.enable && page.comments){ %>
+    <div class="ds-thread"></div>
+  <% } %>
+  <% if (page.comments && config.disqus_shortname){ %>
+    <div id="disqus_thread"></div>
+  <% } %>
 </section>
-<% } %>
