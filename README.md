@@ -5,21 +5,21 @@ Pacman is a flat and responsive design theme for [Hexo](http://hexo.io).
 [Demo](http://A-limon.github.io/pacman) || [Alimon's Blog](http://yangjian.me)
 
 中文说明请访问[这里](http://A-limon.github.io/pacman/hello/introducing-pacman-theme/)
-##Installation
-###Install
+## Installation
+### Install
 ```
 $ git clone https://github.com/A-limon/pacman.git themes/pacman
 ```
 **Pacman requires Hexo 2.4.5 and above.** 
-###Enable
+### Enable
 Modify `theme` setting in blog folder` _config.yml` to `pacman`.
-###Update
+### Update
 ```
 cd themes/pacman
 git pull
 ```
 **please backup your `_config.yml` file before update.** 
-##Configuration
+## Configuration
 
 Modify settings in  `/themes/pacman/_config.yml`.
 
